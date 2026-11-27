@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<meta name="description" content="광주 첨단3지구 마지막 민간분양, 제일풍경채 첨단3지구 A6BL. 전용 84·115·129㎡ 총 638세대, 분양가상한제 적용. 관심고객 등록 1522-7226." />
+<meta name="description" content="광주 첨단3지구 마지막 민간분양, 제일풍경채 첨단3지구 A6BL. 전용 84·115·129㎡ 총 638세대, 분양가상한제 적용. 방문예약 1522-7226." />
 <meta name="theme-color" content="#0F2334" />
 <meta property="og:title" content="제일풍경채 첨단3지구 A6BL｜첨단3지구를 완성하는 위대한 마침표" />
 <meta property="og:description" content="AI·반도체 산업의 중심 광주 첨단3지구, 마지막 민간분양 아파트. 총 638세대, 전용 84·115·129㎡." />
@@ -499,6 +499,28 @@ body.menu-open .drawer{opacity:1;visibility:visible}
 .err{display:none;margin-top:7px;font-size:12px;color:#c0603f}
 .has-err input[type=text],.has-err input[type=tel]{border-color:#d08060;background:#fdf7f5}
 .has-err .err{display:block}
+/* ---------- 방문예정 (방문일·방문시간) ---------- */
+.visit{margin-top:24px;padding-top:21px;border-top:1px solid var(--line-soft)}
+.visit__cap{font-size:13px;font-weight:600;color:var(--navy-2);letter-spacing:.01em}
+.visit__desc{margin-top:5px;font-size:11.5px;line-height:1.6;color:var(--gray-2)}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.field-row .field{margin-top:0}
+.field input[type=date],.field select{
+  width:100%;height:50px;padding:0 14px;border:1px solid var(--line);border-radius:2px;
+  background:#fdfcf9;font-size:14px;font-family:inherit;color:var(--navy-2);
+  transition:border-color .3s var(--ease),background .3s var(--ease);
+}
+.field select{
+  appearance:none;-webkit-appearance:none;cursor:pointer;padding-right:34px;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5 6 6.5l5-5' fill='none' stroke='%23757a80' stroke-width='1.4' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 13px center;background-size:11px;
+}
+.field input[type=date]:focus,.field select:focus{outline:none;border-color:var(--gold);background-color:#fff}
+.has-err input[type=date],.has-err select{border-color:#d08060;background-color:#fdf7f5}
+@media (max-width:560px){
+  .field-row{grid-template-columns:1fr;gap:0}
+  .field-row .field{margin-top:16px}
+}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{position:relative;flex:1 1 calc(50% - 8px);min-width:0;display:block}
 .chip input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer;z-index:2}
@@ -664,7 +686,7 @@ body.menu-open .drawer{opacity:1;visibility:visible}
       <a href="#premium">미래가치</a>
       <a href="#layout">단지배치</a>
       <a href="#types">타입안내</a>
-      <a href="#contact">관심고객</a>
+      <a href="#contact">방문예약</a>
     </nav>
 
     <a href="tel:1522-7226" class="header__tel">
@@ -685,7 +707,7 @@ body.menu-open .drawer{opacity:1;visibility:visible}
   <a href="#premium"><i>03</i>미래가치</a>
   <a href="#layout"><i>04</i>단지배치</a>
   <a href="#types"><i>05</i>타입안내</a>
-  <a href="#contact"><i>06</i>관심고객</a>
+  <a href="#contact"><i>06</i>방문예약</a>
   <div class="drawer__foot">
     <span>분양 문의</span>
     <a href="tel:1522-7226" style="border:0;padding:0;font-size:inherit;color:inherit"><b>1522-7226</b></a>
@@ -716,7 +738,7 @@ body.menu-open .drawer{opacity:1;visibility:visible}
         <li>입주 <b>2029.08</b> 예정</li>
       </ul>
       <div class="hero__cta">
-        <a href="#contact" class="btn btn--gold">관심고객 등록</a>
+        <a href="#contact" class="btn btn--gold">방문예약 신청</a>
         <a href="tel:1522-7226" class="btn btn--ghost">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2Z"/></svg>
           1522-7226
@@ -1243,10 +1265,10 @@ body.menu-open .drawer{opacity:1;visibility:visible}
       <div class="contact__grid">
         <div class="contact__lead">
           <p class="eyebrow eyebrow--light reveal">06 · Contact</p>
-          <h2 class="h2 reveal" data-delay="1">관심고객 등록</h2>
+          <h2 class="h2 reveal" data-delay="1">방문예약</h2>
           <p class="reveal" data-delay="2">
-            성함과 연락처를 남겨주시면 담당자가 순차적으로 안내드립니다.
-            궁금하신 사항은 대표번호로 편하게 문의하세요.
+            모델하우스 방문을 원하시는 날짜와 시간을 남겨주시면 담당자가 확인 후 안내드립니다.
+            방문 전 사전상담도 함께 예약하실 수 있으며, 궁금하신 사항은 대표번호로 편하게 문의하세요.
           </p>
 
           <a href="tel:1522-7226" class="contact__tel reveal" data-delay="3">
@@ -1262,7 +1284,7 @@ body.menu-open .drawer{opacity:1;visibility:visible}
         </div>
 
         <form class="form reveal" data-delay="1" id="inqForm" novalidate>
-          <p class="form__title">관심고객 등록 <i>Inquiry</i></p>
+          <p class="form__title">방문예약 <i>Reservation</i></p>
 
           <div class="field" id="f-name">
             <label for="name">성함<span class="req">*</span></label>
@@ -1277,14 +1299,43 @@ body.menu-open .drawer{opacity:1;visibility:visible}
           </div>
 
           <div class="field" id="f-type">
-            <span class="field__label">관심 평형<span class="req">*</span></span>
+            <span class="field__label">희망 평형<span class="req">*</span></span>
             <div class="chips">
               <label class="chip"><input type="radio" name="type" value="84㎡A" /><span>84㎡A</span></label>
               <label class="chip"><input type="radio" name="type" value="84㎡B" /><span>84㎡B</span></label>
               <label class="chip"><input type="radio" name="type" value="115㎡" /><span>115㎡</span></label>
               <label class="chip"><input type="radio" name="type" value="129㎡" /><span>129㎡</span></label>
             </div>
-            <p class="err">관심 평형을 선택해 주세요.</p>
+            <p class="err">희망 평형을 선택해 주세요.</p>
+          </div>
+
+          <div class="visit" id="f-visit">
+            <p class="visit__cap">방문예정<span class="req">*</span></p>
+            <p class="visit__desc">모델하우스 방문을 원하시는 날짜와 시간을 선택해 주세요. (운영 10:00~18:00)</p>
+            <div class="field-row">
+              <div class="field" id="f-vdate">
+                <label for="visitDate">방문일<span class="req">*</span></label>
+                <input type="date" id="visitDate" name="visitDate" />
+                <p class="err">방문일을 선택해 주세요.</p>
+              </div>
+              <div class="field" id="f-vtime">
+                <label for="visitTime">방문시간<span class="req">*</span></label>
+                <select id="visitTime" name="visitTime">
+                  <option value="" selected>시간 선택</option>
+                  <option value="10:00">10:00</option>
+                  <option value="11:00">11:00</option>
+                  <option value="12:00">12:00</option>
+                  <option value="13:00">13:00</option>
+                  <option value="14:00">14:00</option>
+                  <option value="15:00">15:00</option>
+                  <option value="16:00">16:00</option>
+                  <option value="17:00">17:00</option>
+                  <option value="18:00">18:00</option>
+                  <option value="시간 추후 협의">시간 추후 협의</option>
+                </select>
+                <p class="err">방문시간을 선택해 주세요.</p>
+              </div>
+            </div>
           </div>
 
           <div class="agree" id="f-agree">
@@ -1300,7 +1351,7 @@ body.menu-open .drawer{opacity:1;visibility:visible}
           <div class="privacy" id="privacyBox">
             <dl>
               <dt>수집·이용 목적</dt><dd>분양 상담 및 안내</dd>
-              <dt>수집 항목</dt><dd>성함, 연락처, 관심 평형</dd>
+              <dt>수집 항목</dt><dd>성함, 연락처, 희망 평형, 방문일·시간</dd>
               <dt>보유·이용 기간</dt><dd>상담 완료 후 6개월</dd>
               <dt>동의 거부 권리</dt><dd>동의를 거부할 수 있으며, 이 경우 상담이 제한됩니다.</dd>
               <dt>운영 주체</dt><dd>제일풍경채 첨단3지구 A6BL 분양영업팀</dd>
@@ -1309,9 +1360,9 @@ body.menu-open .drawer{opacity:1;visibility:visible}
 
           <button type="submit" class="btn btn--navy form__submit">
             <span class="spinner" aria-hidden="true"></span>
-            <span class="form__submit-label">관심고객 등록하기</span>
+            <span class="form__submit-label">방문예약하기</span>
           </button>
-          <p class="form__note">등록하신 내용은 담당자 이메일로 전달되며, 상담 목적으로만 사용됩니다.</p>
+          <p class="form__note">예약하신 내용은 담당자 이메일로 전달되며, 상담 목적으로만 사용됩니다.</p>
 
           <!-- 허니팟: 봇이 채우면 전송하지 않음 -->
           <div class="hp" aria-hidden="true">
@@ -1365,7 +1416,7 @@ body.menu-open .drawer{opacity:1;visibility:visible}
 
 <!-- ============ Floating ============ -->
 <div class="float-side" id="floatSide">
-  <a href="#contact" class="inq">관심고객<br />등록</a>
+  <a href="#contact" class="inq">방문예약</a>
   <a href="#top" class="top" id="topBtn" aria-label="맨 위로">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
     <span>TOP</span>
@@ -1378,7 +1429,7 @@ body.menu-open .drawer{opacity:1;visibility:visible}
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2Z"/></svg>
     전화상담
   </a>
-  <a href="#contact" class="inq">관심고객 등록</a>
+  <a href="#contact" class="inq">방문예약</a>
 </div>
 
 <!-- ============ Modal ============ -->
@@ -1387,20 +1438,22 @@ body.menu-open .drawer{opacity:1;visibility:visible}
     <div class="modal__ico" aria-hidden="true">
       <svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h4L13 7.5 10.5 9a12 12 0 0 0 4.5 4.5L16.5 11 21 13.5v4A2.5 2.5 0 0 1 18.5 20C10.5 20 4 13.5 4 5.5Z"/></svg>
     </div>
-    <h3 id="modalTitle">관심고객 등록 완료</h3>
+    <h3 id="modalTitle">방문예약 완료</h3>
     <p id="modalLead">
-      관심고객 등록이 완료되었습니다.<br />
-      빠른 시일 내에 대표번호 <b>1522-7226</b>으로 안내드리겠습니다.
+      방문예약이 완료되었습니다.<br />
+      담당자가 방문일과 시간을 확인한 뒤 대표번호 <b>1522-7226</b>으로 안내드리겠습니다.
     </p>
     <div class="modal__summary" id="modalSummary">
       <div><b>성함</b><span id="m-name">—</span></div>
       <div><b>연락처</b><span id="m-phone">—</span></div>
-      <div><b>관심 평형</b><span id="m-type">—</span></div>
+      <div><b>희망 평형</b><span id="m-type">—</span></div>
+      <div><b>방문일</b><span id="m-visit-date">—</span></div>
+      <div><b>방문시간</b><span id="m-visit-time">—</span></div>
       <div><b>접수일시</b><span id="m-time">—</span></div>
     </div>
     <p class="modal__tel">전화 상담 <b>1522-7226</b></p>
     <button type="button" class="btn btn--navy modal__close" id="modalClose">확인</button>
-    <p class="modal__demo" id="modalNote">※ 등록하신 내용은 담당자 이메일로 전달됩니다.</p>
+    <p class="modal__demo" id="modalNote">※ 예약하신 내용은 담당자 이메일로 전달됩니다.</p>
   </div>
 </div>
 
@@ -1620,6 +1673,17 @@ body.menu-open .drawer{opacity:1;visibility:visible}
   var fAgree = document.getElementById("f-agree");
   var nameEl = document.getElementById("name");
   var agreeEl = document.getElementById("agree");
+  var fVDate = document.getElementById("f-vdate");
+  var fVTime = document.getElementById("f-vtime");
+  var visitDate = document.getElementById("visitDate");
+  var visitTime = document.getElementById("visitTime");
+  var vDateErr = fVDate.querySelector(".err");
+
+  /* 오늘 이전 날짜는 선택할 수 없도록 min 설정 (KST 기준) */
+  visitDate.min = todayKST();
+  visitDate.addEventListener("input", function () { fVDate.classList.remove("has-err"); });
+  visitDate.addEventListener("change", function () { fVDate.classList.remove("has-err"); });
+  visitTime.addEventListener("change", function () { fVTime.classList.remove("has-err"); });
 
   nameEl.addEventListener("input", function () { fName.classList.remove("has-err"); });
   phone.addEventListener("input", function () { fPhone.classList.remove("has-err"); });
@@ -1646,6 +1710,8 @@ body.menu-open .drawer{opacity:1;visibility:visible}
     document.getElementById("m-name").textContent = data.name || "—";
     document.getElementById("m-phone").textContent = data.phone || "—";
     document.getElementById("m-type").textContent = data.type || "—";
+    document.getElementById("m-visit-date").textContent = data.visitDate || "—";
+    document.getElementById("m-visit-time").textContent = data.visitTime || "—";
     document.getElementById("m-time").textContent = data.time || "—";
     modalFocus = document.activeElement;
     modal.classList.add("open");
@@ -1696,6 +1762,29 @@ body.menu-open .drawer{opacity:1;visibility:visible}
     }
   }
 
+  function todayKST() {
+    var d = new Date();
+    try {
+      var p = {};
+      new Intl.DateTimeFormat("en-GB", {
+        timeZone: "Asia/Seoul", year: "numeric", month: "2-digit", day: "2-digit"
+      }).formatToParts(d).forEach(function (part) { p[part.type] = part.value; });
+      return p.year + "-" + p.month + "-" + p.day;
+    } catch (err) {
+      return d.toISOString().slice(0, 10);
+    }
+  }
+
+  /* 2026-11-28 → 2026.11.28 (토) */
+  function formatVisitDate(v) {
+    if (!v) return "—";
+    var a = String(v).split("-");
+    if (a.length !== 3) return v;
+    var wd = ["일", "월", "화", "수", "목", "금", "토"];
+    var d = new Date(Number(a[0]), Number(a[1]) - 1, Number(a[2]));
+    return a[0] + "." + a[1] + "." + a[2] + " (" + wd[d.getDay()] + ")";
+  }
+
   function setBusy(on) {
     sending = on;
     submitBtn.disabled = on;
@@ -1705,7 +1794,7 @@ body.menu-open .drawer{opacity:1;visibility:visible}
   }
 
   function clearErrors() {
-    [fName, fPhone, fType, fAgree].forEach(function (f) { f.classList.remove("has-err"); });
+    [fName, fPhone, fType, fAgree, fVDate, fVTime].forEach(function (f) { f.classList.remove("has-err"); });
   }
 
   function showSent(entered) {
@@ -1713,9 +1802,9 @@ body.menu-open .drawer{opacity:1;visibility:visible}
     clearErrors();
     openModal({
       variant: "success",
-      title: "관심고객 등록 완료",
-      lead: "관심고객 등록이 완료되었습니다.<br />빠른 시일 내에 대표번호 <b>" + TEL + "</b>으로 안내드리겠습니다.",
-      note: "※ 등록하신 내용은 담당자 이메일로 전달되었습니다.",
+      title: "방문예약 완료",
+      lead: "방문예약이 완료되었습니다.<br />담당자가 방문일과 시간을 확인한 뒤 대표번호 <b>" + TEL + "</b>으로 안내드리겠습니다.",
+      note: "※ 예약하신 내용은 담당자 이메일로 전달되었습니다.",
       data: entered
     });
   }
@@ -1723,17 +1812,17 @@ body.menu-open .drawer{opacity:1;visibility:visible}
   function showError(kind, entered) {
     var box = {
       file: {
-        title: "등록을 완료하지 못했습니다",
+        title: "예약을 완료하지 못했습니다",
         lead: "지금은 파일로 열어 본 미리보기 상태라<br />이메일 접수가 동작하지 않습니다.<br />웹 주소(HTTP/HTTPS)로 게시한 뒤 이용해 주세요.",
         note: "급하시면 대표번호 " + TEL + "으로 연락 주세요."
       },
       timeout: {
         title: "접수 확인이 지연되고 있습니다",
-        lead: "응답이 늦어져 등록 완료를 확인하지 못했습니다.<br />잠시 후 다시 시도해 주세요.",
+        lead: "응답이 늦어져 예약 완료를 확인하지 못했습니다.<br />잠시 후 다시 시도해 주세요.",
         note: "다시 시도해도 안 되면 대표번호 " + TEL + "으로 연락 주세요."
       },
       network: {
-        title: "등록을 완료하지 못했습니다",
+        title: "예약을 완료하지 못했습니다",
         lead: "전송 중 문제가 발생해 접수가 이루어지지 않았습니다.<br />잠시 후 다시 시도해 주세요.",
         note: "계속 안 되면 대표번호 " + TEL + "으로 연락 주세요."
       }
@@ -1785,18 +1874,30 @@ body.menu-open .drawer{opacity:1;visibility:visible}
     var name = nameEl.value.trim();
     var digits = phone.value.replace(/[^0-9]/g, "");
     var type = form.querySelector('input[name="type"]:checked');
+    var dateVal = visitDate.value;
+    var timeVal = visitTime.value;
+
+    visitDate.min = todayKST();
 
     if (name.length < 2) { fName.classList.add("has-err"); ok = false; }
     if (!(digits.length === 10 || digits.length === 11) || !/^0/.test(digits)) {
       fPhone.classList.add("has-err"); ok = false;
     }
     if (!type) { fType.classList.add("has-err"); ok = false; }
+    if (!dateVal) {
+      vDateErr.textContent = "방문일을 선택해 주세요.";
+      fVDate.classList.add("has-err"); ok = false;
+    } else if (dateVal < visitDate.min) {
+      vDateErr.textContent = "오늘 이후 날짜를 선택해 주세요.";
+      fVDate.classList.add("has-err"); ok = false;
+    }
+    if (!timeVal) { fVTime.classList.add("has-err"); ok = false; }
     if (!agreeEl.checked) { fAgree.classList.add("has-err"); ok = false; }
 
     if (!ok) {
       var first = form.querySelector(".has-err");
       if (first) {
-        var focusable = first.querySelector("input");
+        var focusable = first.querySelector("input, select");
         if (focusable) focusable.focus({ preventScroll: true });
         first.scrollIntoView({ behavior: "smooth", block: "center" });
       }
@@ -1810,7 +1911,10 @@ body.menu-open .drawer{opacity:1;visibility:visible}
     }
 
     var time = nowKST();
-    var entered = { name: name, phone: phone.value, type: type.value, time: time };
+    var entered = {
+      name: name, phone: phone.value, type: type.value,
+      visitDate: formatVisitDate(dateVal), visitTime: timeVal, time: time
+    };
 
     if (window.location.protocol === "file:") {
       showError("file", entered);
@@ -1820,9 +1924,11 @@ body.menu-open .drawer{opacity:1;visibility:visible}
     sendInquiry({
       "성함": name,
       "연락처": phone.value,
-      "관심평형": type.value,
+      "희망평형": type.value,
+      "방문일": formatVisitDate(dateVal),
+      "방문시간": timeVal,
       "접수일시": time,
-      "_subject": "[제일풍경채 첨단3지구 A6BL] 신규 관심고객 등록",
+      "_subject": "[제일풍경채 첨단3지구 A6BL] 신규 방문예약",
       "_template": "table",
       "_captcha": "false"
     }, entered);
