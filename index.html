@@ -1,0 +1,1850 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="description" content="광주 첨단3지구 마지막 민간분양, 제일풍경채 첨단3지구 A6BL. 전용 84·115·129㎡ 총 638세대, 분양가상한제 적용. 관심고객 등록 1522-7226." />
+<meta name="theme-color" content="#0F2334" />
+<meta property="og:title" content="제일풍경채 첨단3지구 A6BL｜첨단3지구를 완성하는 위대한 마침표" />
+<meta property="og:description" content="AI·반도체 산업의 중심 광주 첨단3지구, 마지막 민간분양 아파트. 총 638세대, 전용 84·115·129㎡." />
+<meta property="og:image" content="./images/hero-aerial.jpg" />
+<title>제일풍경채 첨단3지구 A6BL｜분양 안내</title>
+
+<style>
+/* =========================================================
+   제일풍경채 첨단3지구 A6BL — 반응형 분양 안내 페이지
+   단일 파일 / 외부 요청 없음 / 이미지는 ./images 로컬 참조
+   ========================================================= */
+
+/* ---------- 1. Tokens ---------- */
+:root{
+  --navy:#0F2334;
+  --navy-2:#16324a;
+  --navy-3:#1e415d;
+  --ivory:#F5F1E7;
+  --paper:#FCFAF5;
+  --sand:#EDE5D6;
+  --gold:#B3945F;
+  --gold-2:#C9AE7F;
+  --gold-3:#E3D4B6;
+  --text:#233039;
+  --gray:#6C7480;
+  --gray-2:#98A0A9;
+  --line:rgba(15,35,52,.14);
+  --line-soft:rgba(15,35,52,.08);
+
+  --ff-kr:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Noto Sans CJK KR","Malgun Gothic","맑은 고딕",sans-serif;
+  --ff-en:"Optima","Didot","Times New Roman",Georgia,serif;
+
+  --w:min(1240px, 100% - 96px);
+  --pad-y:128px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --header-h:86px;
+}
+@media (max-width:1024px){
+  :root{ --w:min(1240px, 100% - 48px); --pad-y:92px; --header-h:72px; }
+}
+@media (max-width:640px){
+  :root{ --w:calc(100% - 36px); --pad-y:72px; --header-h:60px; }
+}
+
+/* ---------- 2. Reset ---------- */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--text);
+  font-family:var(--ff-kr);font-size:16px;line-height:1.75;font-weight:400;
+  letter-spacing:-.01em;word-break:keep-all;overflow-wrap:break-word;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+body.lock{overflow:hidden}
+h1,h2,h3,h4,p,figure,ul,ol,dl,dd{margin:0}
+ul,ol{list-style:none;padding:0}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%;height:auto}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+input,select,textarea{font:inherit;color:inherit}
+::selection{background:var(--gold-3);color:var(--navy)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+section[id]{scroll-margin-top:var(--header-h)}
+.nw{white-space:nowrap}
+
+/* ---------- 3. Utilities ---------- */
+.wrap{width:var(--w);margin-inline:auto}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:14px;
+  font-family:var(--ff-en);font-size:11px;letter-spacing:.36em;text-transform:uppercase;
+  color:var(--gold);
+}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--gold);opacity:.75}
+.eyebrow--light{color:var(--gold-2)}
+.eyebrow--light::before{background:var(--gold-2)}
+.h2{
+  font-size:clamp(27px, 3.1vw, 42px);line-height:1.34;font-weight:700;
+  letter-spacing:-.035em;color:var(--navy);margin-top:20px;
+}
+.h2 em{font-style:normal;color:var(--gold)}
+.sec-head{max-width:760px}
+.sec-head .lead{margin-top:20px;color:var(--gray);font-size:16.5px;line-height:1.85}
+.sec-head--center{margin-inline:auto;text-align:center}
+.sec-head--center .eyebrow{justify-content:center}
+.sec-head--light .h2{color:#fff}
+.sec-head--light .lead{color:rgba(255,255,255,.66)}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal[data-delay="1"]{transition-delay:.09s}
+.reveal[data-delay="2"]{transition-delay:.18s}
+.reveal[data-delay="3"]{transition-delay:.27s}
+.reveal[data-delay="4"]{transition-delay:.36s}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  *{animation-duration:.001ms!important;transition-duration:.001ms!important}
+}
+
+/* ---------- 4. Buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:0 34px;height:56px;font-size:15px;font-weight:600;letter-spacing:.01em;
+  border-radius:2px;transition:background .35s var(--ease),color .35s var(--ease),border-color .35s var(--ease),transform .35s var(--ease);
+}
+.btn svg{width:17px;height:17px}
+.btn--gold{background:var(--gold);color:#fff}
+.btn--gold:hover{background:#a1844f}
+.btn--navy{background:var(--navy);color:#fff}
+.btn--navy:hover{background:var(--navy-3)}
+.btn--ghost{border:1px solid rgba(255,255,255,.42);color:#fff}
+.btn--ghost:hover{background:rgba(255,255,255,.1);border-color:#fff}
+
+/* ---------- 5. Header ---------- */
+.header{
+  position:fixed;inset:0 0 auto;z-index:95;height:var(--header-h);
+  display:flex;align-items:center;transition:background .45s var(--ease),box-shadow .45s var(--ease),height .45s var(--ease);
+}
+.header.is-solid{background:rgba(252,250,245,.96);box-shadow:0 1px 0 var(--line-soft);backdrop-filter:blur(10px)}
+.header__in{display:flex;align-items:center;justify-content:space-between;gap:24px;width:var(--w);margin-inline:auto}
+.logo{display:flex;align-items:baseline;gap:12px;color:#fff;transition:color .45s var(--ease)}
+.header.is-solid .logo{color:var(--navy)}
+.logo{min-width:0;white-space:nowrap}
+.logo__brand{font-size:20px;font-weight:700;letter-spacing:-.01em}
+.logo__bar{width:1px;height:14px;background:currentColor;opacity:.38;align-self:center}
+.logo__sub{font-size:12px;letter-spacing:.01em;opacity:.86}
+.logo__sub b{font-weight:600}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{
+  position:relative;padding:10px 15px;font-size:14.5px;font-weight:500;letter-spacing:.01em;
+  color:rgba(255,255,255,.86);transition:color .3s var(--ease);
+}
+.header.is-solid .nav a{color:var(--navy-2)}
+.nav a::after{
+  content:"";position:absolute;left:15px;right:15px;bottom:4px;height:1px;
+  background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease);
+}
+.nav a:hover::after,.nav a.is-active::after{transform:scaleX(1)}
+.nav a.is-active{color:var(--gold)}
+.header__tel{
+  display:inline-flex;align-items:center;gap:9px;height:42px;padding:0 20px;
+  border:1px solid rgba(255,255,255,.34);border-radius:2px;color:#fff;
+  font-family:var(--ff-en);font-size:16px;letter-spacing:.09em;transition:background .35s var(--ease),color .35s var(--ease),border-color .35s var(--ease);
+}
+.header.is-solid .header__tel{color:var(--navy);border-color:var(--line)}
+.header__tel svg{width:15px;height:15px;flex:none}
+.header__tel:hover{background:var(--gold);border-color:var(--gold);color:#fff}
+.burger{display:none;width:44px;height:44px;margin-right:-8px;position:relative;z-index:90}
+.burger span{position:absolute;left:11px;right:11px;height:1.5px;background:#fff;transition:transform .4s var(--ease),opacity .3s var(--ease),background .4s var(--ease)}
+.header.is-solid .burger span{background:var(--navy)}
+.burger span:nth-child(1){top:16px}
+.burger span:nth-child(2){top:22px}
+.burger span:nth-child(3){top:28px}
+body.menu-open .header{background:transparent;box-shadow:none;backdrop-filter:none}
+body.menu-open .logo{color:#fff}
+body.menu-open .burger span{background:#fff}
+body.menu-open .burger span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+body.menu-open .burger span:nth-child(2){opacity:0}
+body.menu-open .burger span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+@media (max-width:860px){
+  .nav,.header__tel{display:none}
+  .burger{display:block}
+}
+
+/* ---------- 6. Drawer ---------- */
+.drawer{
+  position:fixed;inset:0;z-index:85;background:var(--navy);
+  display:flex;flex-direction:column;justify-content:center;gap:4px;padding:96px 32px 120px;
+  opacity:0;visibility:hidden;transition:opacity .45s var(--ease),visibility .45s;
+}
+body.menu-open .drawer{opacity:1;visibility:visible}
+.drawer a{
+  color:#fff;font-size:23px;font-weight:600;padding:15px 0;
+  border-bottom:1px solid rgba(255,255,255,.1);display:flex;align-items:baseline;gap:14px;
+}
+.drawer a i{font-family:var(--ff-en);font-style:normal;font-size:11px;letter-spacing:.2em;color:var(--gold-2);width:26px}
+.drawer__foot{margin-top:34px;display:flex;flex-direction:column;gap:14px;color:rgba(255,255,255,.68);font-size:13.5px}
+.drawer__foot b{display:block;font-family:var(--ff-en);font-size:24px;letter-spacing:.08em;color:#fff;margin-top:4px}
+
+/* ---------- 7. Hero ---------- */
+.hero{position:relative;min-height:min(100vh, 880px);display:flex;align-items:flex-end;overflow:hidden;background:var(--navy)}
+.hero__media{position:absolute;inset:0}
+.hero__media img{width:100%;height:100%;object-fit:cover;object-position:50% 42%;animation:heroZoom 18s var(--ease) forwards}
+@keyframes heroZoom{from{transform:scale(1.06)}to{transform:scale(1)}}
+.hero__media::after{
+  content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(to bottom,rgba(9,20,30,.66) 0%,rgba(9,20,30,.22) 32%,rgba(9,20,30,.46) 68%,rgba(9,20,30,.88) 100%),
+    linear-gradient(100deg,rgba(9,20,30,.72) 0%,rgba(9,20,30,.18) 58%,rgba(9,20,30,0) 78%);
+}
+.hero__in{position:relative;z-index:2;width:var(--w);margin-inline:auto;padding:calc(var(--header-h) + 40px) 0 108px}
+.hero__eyebrow{display:inline-flex;align-items:center;gap:14px;font-family:var(--ff-en);font-size:11.5px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold-2)}
+.hero__eyebrow::before{content:"";width:40px;height:1px;background:var(--gold-2);opacity:.8}
+.hero h1{
+  margin-top:26px;color:#fff;font-size:clamp(34px, 5.4vw, 68px);line-height:1.22;
+  font-weight:800;letter-spacing:-.045em;text-shadow:0 2px 30px rgba(0,0,0,.34);
+}
+.hero h1 span{display:block;font-weight:300;font-size:.56em;letter-spacing:-.02em;color:rgba(255,255,255,.9);margin-bottom:12px}
+.hero h1 em{font-style:normal;color:var(--gold-2)}
+.hero__desc{margin-top:24px;max-width:600px;color:rgba(255,255,255,.86);font-size:clamp(14.5px,1.5vw,17px);line-height:1.8}
+.hero__tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:28px}
+.hero__tags li{
+  padding:8px 16px;border:1px solid rgba(255,255,255,.3);border-radius:999px;
+  color:rgba(255,255,255,.92);font-size:12.5px;letter-spacing:.01em;backdrop-filter:blur(2px);
+}
+.hero__tags li b{color:var(--gold-2);font-weight:600}
+.hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.hero__scroll{
+  position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:2;
+  display:flex;flex-direction:column;align-items:center;gap:9px;color:rgba(255,255,255,.6);
+  font-family:var(--ff-en);font-size:9.5px;letter-spacing:.28em;text-transform:uppercase;
+}
+.hero__scroll i{display:block;width:1px;height:44px;background:linear-gradient(rgba(255,255,255,.7),rgba(255,255,255,0));animation:scrollLine 2.2s var(--ease) infinite}
+@keyframes scrollLine{0%{transform:scaleY(.2);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}46%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(.2);transform-origin:bottom}}
+@media (max-width:860px){
+  .logo__brand{font-size:17px}
+  .logo__sub{font-size:10.5px}
+  .header__in{gap:12px}
+}
+@media (max-width:400px){
+  .logo__brand{font-size:15.5px}
+  .logo__sub{font-size:9.5px;letter-spacing:0}
+}
+@media (max-width:640px){
+  .hero{min-height:92vh}
+  .hero__media img{object-position:50% 62%}
+  .hero__in{padding-bottom:88px}
+  .hero__eyebrow{font-size:9.5px;letter-spacing:.2em}
+  .hero__media::after{
+    background:
+      linear-gradient(to bottom,rgba(9,20,30,.8) 0%,rgba(9,20,30,.52) 38%,rgba(9,20,30,.74) 74%,rgba(9,20,30,.94) 100%),
+      linear-gradient(100deg,rgba(9,20,30,.7) 0%,rgba(9,20,30,.2) 70%,rgba(9,20,30,0) 100%);
+  }
+  .hero h1{letter-spacing:-.04em}
+  .hero__desc{font-size:14px}
+  .hero__cta .btn{flex:1 1 100%}
+  .hero__scroll{display:none}
+}
+
+/* ---------- 8. Stats ---------- */
+.stats{background:var(--navy);color:#fff;padding:0}
+.stats__in{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.12)}
+.stats__item{padding:44px 26px 48px;border-right:1px solid rgba(255,255,255,.12);position:relative}
+.stats__item:first-child{border-left:1px solid rgba(255,255,255,.12)}
+.stats__item b{display:flex;align-items:baseline;gap:6px;font-family:var(--ff-en);font-size:clamp(30px,3.4vw,42px);font-weight:400;letter-spacing:.01em;color:#fff;line-height:1}
+.stats__item b i{font-style:normal;font-size:.44em;letter-spacing:.12em;color:var(--gold-2);font-family:var(--ff-kr);font-weight:500}
+.stats__item p{margin-top:14px;font-size:13.5px;color:rgba(255,255,255,.62);letter-spacing:.02em}
+.stats__item--text b{font-family:var(--ff-kr);font-size:clamp(19px,2.1vw,26px);font-weight:700;letter-spacing:-.03em;line-height:1.2;gap:9px;flex-wrap:wrap}
+.stats__item--text b i{font-size:12px;letter-spacing:.06em;font-weight:500}
+@media (max-width:860px){
+  .stats__in{grid-template-columns:repeat(2,1fr)}
+  .stats__item:nth-child(1),.stats__item:nth-child(2){border-bottom:1px solid rgba(255,255,255,.12)}
+  .stats__item:nth-child(odd){border-left:1px solid rgba(255,255,255,.12)}
+  .stats__item{padding:30px 20px 32px}
+  .stats__item p{font-size:12.5px}
+}
+
+/* ---------- 9. Sections base ---------- */
+.sec{padding:var(--pad-y) 0;position:relative}
+.sec--ivory{background:var(--ivory)}
+.sec--navy{background:var(--navy);color:#fff}
+.sec--navy .h2{color:#fff}
+.sec--tight{padding-top:0}
+
+/* ---------- 10. Overview ---------- */
+.overview__grid{display:grid;grid-template-columns:1.02fr .98fr;gap:64px;align-items:start;margin-top:56px}
+.overview__figure{position:relative;position:sticky;top:calc(var(--header-h) + 30px)}
+.overview__figure img{width:100%;border-radius:2px}
+.overview__figure figcaption{margin-top:14px;font-size:12.5px;color:var(--gray-2);letter-spacing:.01em}
+.frame{position:relative}
+.frame img{position:relative;z-index:1}
+.frame::before{
+  content:"";position:absolute;inset:16px -16px -16px 16px;border:1px solid var(--gold-3);
+  z-index:0;pointer-events:none;
+}
+.overview__panels{display:flex;flex-direction:column;gap:34px}
+.panelbox{border-top:1px solid var(--line);padding-top:26px}
+.panelbox h3{font-size:15px;font-weight:700;letter-spacing:.02em;color:var(--navy);display:flex;align-items:center;gap:10px}
+.panelbox h3 i{font-family:var(--ff-en);font-style:normal;font-size:11px;letter-spacing:.2em;color:var(--gold);font-weight:400}
+.deflist{margin-top:18px;border-top:1px solid var(--line-soft)}
+.deflist>div{display:grid;grid-template-columns:112px 1fr;gap:16px;padding:13px 0;border-bottom:1px solid var(--line-soft)}
+.deflist dt{font-size:13.5px;color:var(--gray);letter-spacing:.01em}
+.deflist dd{font-size:14px;color:var(--text);line-height:1.7}
+.deflist dd b{font-weight:600;color:var(--navy)}
+.unit-table{width:100%;border-collapse:collapse;margin-top:18px;font-size:14px}
+.unit-table th,.unit-table td{padding:12px 10px;border-bottom:1px solid var(--line-soft);text-align:center}
+.unit-table th{font-size:12.5px;font-weight:600;color:var(--gray);border-bottom:1px solid var(--line);letter-spacing:.02em}
+.unit-table td:first-child,.unit-table th:first-child{text-align:left}
+.unit-table td b{font-family:var(--ff-en);font-size:15px;letter-spacing:.02em;color:var(--navy)}
+.unit-table tr:last-child td{border-bottom:0;border-top:1px solid var(--line);font-weight:600;color:var(--navy)}
+.unit-table tbody tr{transition:background .25s var(--ease)}
+.unit-table tbody tr:hover{background:rgba(179,148,95,.07)}
+.unit-table .pc{color:var(--gray-2);font-size:12px;margin-left:4px}
+@media (max-width:980px){
+  .overview__grid{grid-template-columns:1fr;gap:44px}
+  .frame::before{display:none}
+  .deflist>div{grid-template-columns:96px 1fr}
+}
+
+/* ---------- 11. Location ---------- */
+.location__map{margin-top:52px;position:relative}
+.location__map img{width:100%;border-radius:2px}
+.zoom-btn{
+  position:absolute;right:18px;bottom:18px;display:inline-flex;align-items:center;gap:8px;
+  padding:11px 18px;background:rgba(15,35,52,.82);color:#fff;border-radius:2px;
+  font-size:12.5px;letter-spacing:.02em;backdrop-filter:blur(6px);transition:background .3s var(--ease);
+}
+.zoom-btn:hover{background:var(--gold)}
+.zoom-btn svg{width:15px;height:15px}
+.loc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:56px;background:rgba(255,255,255,.14)}
+.loc-card{background:var(--navy);padding:32px 28px 34px;transition:background .4s var(--ease)}
+.loc-card:hover{background:var(--navy-2)}
+.loc-card__no{font-family:var(--ff-en);font-size:11px;letter-spacing:.24em;color:var(--gold-2)}
+.loc-card h3{margin-top:14px;font-size:17px;font-weight:700;color:#fff;letter-spacing:-.01em;line-height:1.5}
+.loc-card p{margin-top:11px;font-size:13.5px;line-height:1.8;color:rgba(255,255,255,.64)}
+.loc-card p b{color:var(--gold-2);font-weight:600}
+.devplan{margin-top:56px;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center;padding:30px 34px;border:1px solid rgba(255,255,255,.16)}
+.devplan p{font-size:14.5px;line-height:1.8;color:rgba(255,255,255,.72)}
+.devplan p b{display:block;color:#fff;font-size:16px;font-weight:600;margin-bottom:7px;letter-spacing:-.01em}
+@media (max-width:980px){
+  .loc-grid{grid-template-columns:1fr 1fr}
+  .devplan{grid-template-columns:1fr;gap:20px;padding:26px 24px}
+}
+@media (max-width:620px){
+  .loc-grid{grid-template-columns:1fr}
+  .zoom-btn{right:12px;bottom:12px;padding:9px 14px;font-size:11.5px}
+}
+
+/* ---------- 12. Premium (8) ---------- */
+.premium__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);margin-top:56px;border-top:1px solid var(--line)}
+.pcard{background:var(--paper);padding:34px 26px 38px;position:relative;transition:background .4s var(--ease),transform .4s var(--ease)}
+.pcard::after{content:"";position:absolute;left:0;top:0;width:0;height:2px;background:var(--gold);transition:width .5s var(--ease)}
+.pcard:hover{background:#fff}
+.pcard:hover::after{width:100%}
+.pcard__no{font-family:var(--ff-en);font-size:12px;letter-spacing:.22em;color:var(--gold)}
+.pcard h3{margin-top:16px;font-size:16.5px;line-height:1.5;font-weight:700;color:var(--navy);letter-spacing:-.02em;min-height:50px}
+.pcard p{margin-top:12px;font-size:13.5px;line-height:1.8;color:var(--gray)}
+@media (max-width:980px){
+  .premium__grid{grid-template-columns:1fr 1fr}
+  .pcard h3{min-height:0}
+}
+@media (max-width:520px){
+  .premium__grid{grid-template-columns:1fr}
+  .pcard{padding:26px 22px 28px}
+}
+
+/* ---------- 13. Market ---------- */
+.market{margin-top:56px;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line)}
+.mcard{background:#fff;padding:30px 26px 32px}
+.mcard h3{font-size:14.5px;font-weight:600;color:var(--navy);letter-spacing:.01em}
+.mcard .rate{margin-top:18px;display:flex;align-items:baseline;gap:8px}
+.mcard .rate b{font-family:var(--ff-en);font-size:38px;font-weight:400;color:var(--gold);line-height:1}
+.mcard .rate span{font-size:11.5px;letter-spacing:.14em;color:var(--gray-2);text-transform:uppercase}
+.mcompare{margin-top:22px;display:flex;flex-direction:column;gap:10px}
+.mrow{display:grid;grid-template-columns:38px 1fr auto;align-items:center;gap:11px;font-size:11.5px;color:var(--gray)}
+.mrow b{font-family:var(--ff-en);font-size:12.5px;letter-spacing:.02em;color:var(--navy);font-weight:400}
+.mtrack{height:7px;background:var(--sand);overflow:hidden}
+.mtrack i{display:block;height:100%;background:linear-gradient(90deg,var(--gold-2),var(--gold))}
+.mrow:last-child .mtrack i{background:linear-gradient(90deg,var(--navy-3),var(--navy))}
+.mcard .from{margin-top:16px;font-size:11.5px;color:var(--gray-2);line-height:1.7;padding-top:14px;border-top:1px solid var(--line-soft)}
+.market__note{margin-top:22px;font-size:12px;color:var(--gray-2);line-height:1.7}
+@media (max-width:820px){
+  .market{grid-template-columns:1fr}
+}
+
+/* ---------- 14. Layout / product ---------- */
+.layout__figure{margin-top:52px;position:relative;background:var(--navy)}
+.layout__figure img{width:100%}
+.layout__figure .zoom-btn{right:16px;top:16px;bottom:auto}
+.community{margin-top:60px;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.cbox{background:var(--paper);padding:34px 30px 38px}
+.cbox__head{display:flex;align-items:baseline;gap:10px}
+.cbox__head h3{font-size:16px;font-weight:700;color:var(--navy)}
+.cbox__head span{font-family:var(--ff-en);font-size:11.5px;letter-spacing:.16em;color:var(--gold)}
+.cbox ul{margin-top:20px;display:flex;flex-wrap:wrap;gap:8px}
+.cbox li{
+  padding:9px 15px;border:1px solid var(--line);border-radius:999px;
+  font-size:13px;color:var(--navy-2);background:#fff;
+}
+.product{margin-top:56px;display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.fcard{border:1px solid var(--line);padding:30px 28px 32px;background:#fff}
+.fcard h3{font-size:15.5px;font-weight:700;color:var(--navy);display:flex;align-items:center;gap:10px}
+.fcard h3 svg{width:19px;height:19px;color:var(--gold);flex:none}
+.fcard ul{margin-top:16px}
+.fcard li{position:relative;padding-left:14px;font-size:13.5px;line-height:1.85;color:var(--gray)}
+.fcard li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:1px;background:var(--gold-2)}
+@media (max-width:860px){
+  .community{grid-template-columns:1fr}
+  .product{grid-template-columns:1fr}
+}
+
+/* ---------- 15. Gallery ---------- */
+.gallery{margin-top:56px;display:grid;grid-template-columns:1.5fr 1.15fr .8fr .8fr;gap:12px}
+.gitem{position:relative;overflow:hidden;background:var(--sand);cursor:zoom-in;margin:0;height:400px}
+.gitem:first-child{height:400px}
+.gitem img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.gitem:hover img{transform:scale(1.045)}
+.gitem span{
+  position:absolute;left:16px;bottom:13px;z-index:2;color:#fff;font-size:12.5px;letter-spacing:.02em;
+  text-shadow:0 1px 10px rgba(0,0,0,.6);
+}
+.gitem::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(9,20,30,.62),rgba(9,20,30,0) 46%)}
+@media (max-width:1120px){
+  .gallery{grid-template-columns:1.4fr 1fr;gap:10px}
+  .gitem,.gitem:first-child{height:260px}
+}
+@media (max-width:640px){
+  .gallery{grid-template-columns:1fr 1fr;gap:8px}
+  .gitem,.gitem:first-child{height:180px}
+  .gitem:first-child{grid-column:span 2;height:220px}
+  .gitem span{font-size:11px;left:10px;bottom:9px}
+}
+
+/* ---------- 16. Types ---------- */
+.tabs{display:flex;gap:0;margin-top:48px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.tabs button{
+  position:relative;padding:18px 34px 20px;text-align:center;border-right:1px solid var(--line-soft);
+  font-size:16px;font-weight:600;color:var(--gray);letter-spacing:-.01em;
+  transition:color .3s var(--ease);
+}
+.tabs button:first-child{border-left:1px solid var(--line-soft)}
+.tabs button span{display:block;margin-top:5px;font-size:11.5px;font-weight:400;letter-spacing:.02em;color:var(--gray-2)}
+.tabs button::after{
+  content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--gold);
+  transform:scaleX(0);transition:transform .4s var(--ease);
+}
+.tabs button[aria-selected="true"]{color:var(--navy)}
+.tabs button[aria-selected="true"]::after{transform:scaleX(1)}
+.tabs button:hover{color:var(--navy-2)}
+.panel{display:none;grid-template-columns:1.08fr .92fr;gap:56px;padding-top:52px;align-items:start}
+.panel.is-active{display:grid;animation:fadeUp .6s var(--ease)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.panel__media{position:relative;background:#fff;border:1px solid var(--line);padding:22px;cursor:zoom-in}
+.panel__media img{width:100%}
+.panel__media .zoom-hint{
+  position:absolute;right:14px;bottom:12px;display:inline-flex;align-items:center;gap:7px;
+  background:rgba(15,35,52,.78);color:#fff;font-size:11.5px;padding:8px 12px;border-radius:2px;
+  letter-spacing:.02em;
+}
+.panel__media .zoom-hint svg{width:13px;height:13px}
+.panel__body h3{font-size:24px;font-weight:800;color:var(--navy);letter-spacing:-.03em;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.panel__body h3 em{font-style:normal;font-size:12.5px;font-weight:600;letter-spacing:.02em;color:var(--gold);border:1px solid var(--gold-3);padding:5px 11px;border-radius:999px}
+.panel__body .ptype{margin-top:12px;font-size:13.5px;color:var(--gray)}
+.spec{margin-top:26px;border-top:1px solid var(--line)}
+.spec>div{display:grid;grid-template-columns:104px 1fr;gap:14px;padding:12px 0;border-bottom:1px solid var(--line-soft)}
+.spec dt{font-size:13px;color:var(--gray)}
+.spec dd{font-size:14px;color:var(--navy);font-weight:600}
+.spec dd small{font-weight:400;color:var(--gray-2);font-size:12px;margin-left:6px}
+.rooms{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:22px}
+.rooms li{background:#fff;border:1px solid var(--line-soft);padding:11px 13px;font-size:12px;color:var(--gray);line-height:1.5}
+.rooms li b{display:block;font-size:12.5px;color:var(--navy);font-weight:600;letter-spacing:.01em}
+.points{margin-top:24px}
+.points li{position:relative;padding-left:16px;font-size:13.5px;line-height:1.85;color:var(--gray)}
+.points li::before{content:"";position:absolute;left:0;top:11px;width:6px;height:1px;background:var(--gold)}
+.panel__cta{margin-top:30px;display:flex;gap:10px;flex-wrap:wrap}
+.panel__cta .btn{height:48px;padding:0 24px;font-size:13.5px}
+@media (max-width:980px){
+  .panel{grid-template-columns:1fr;gap:34px;padding-top:36px}
+  .tabs button{flex:1 1 50%;padding:15px 10px 16px;font-size:14.5px;border-bottom:1px solid var(--line-soft)}
+  .panel__body h3{font-size:21px}
+}
+@media (max-width:420px){
+  .rooms{grid-template-columns:1fr 1fr}
+}
+
+/* ---------- 17. Contact ---------- */
+.contact{background:var(--navy);color:#fff}
+.contact .h2{color:#fff}
+.contact .h2 em{color:var(--gold-2)}
+.contact__grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:70px;align-items:start}
+.contact__lead p{margin-top:20px;font-size:15px;line-height:1.85;color:rgba(255,255,255,.66)}
+.contact__tel{
+  display:flex;flex-direction:column;gap:6px;margin-top:34px;padding:24px 26px;
+  border:1px solid rgba(255,255,255,.2);transition:border-color .35s var(--ease),background .35s var(--ease);
+}
+.contact__tel:hover{border-color:var(--gold);background:rgba(179,148,95,.08)}
+.contact__tel span{font-family:var(--ff-en);font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-2)}
+.contact__tel b{font-family:var(--ff-en);font-size:32px;font-weight:400;letter-spacing:.06em;color:#fff;line-height:1.2}
+.contact__tel em{font-style:normal;font-size:12.5px;color:rgba(255,255,255,.5)}
+.contact__note{margin-top:26px;font-size:12.5px;line-height:1.8;color:rgba(255,255,255,.42)}
+.form{background:#fff;padding:38px 36px 32px;border-radius:3px;color:var(--text)}
+.form__title{font-size:17px;font-weight:700;color:var(--navy);letter-spacing:-.01em}
+.form__title i{font-family:var(--ff-en);font-style:normal;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-left:10px}
+.field{margin-top:22px}
+.field label,.field__label{display:block;font-size:13px;font-weight:600;color:var(--navy-2);letter-spacing:.01em;margin-bottom:9px}
+.req{color:#c0603f;margin-left:3px}
+.field input[type=text],.field input[type=tel]{
+  width:100%;height:50px;padding:0 15px;border:1px solid var(--line);border-radius:2px;
+  background:#fdfcf9;font-size:14.5px;transition:border-color .3s var(--ease),background .3s var(--ease);
+}
+.field input::placeholder{color:#b3b8bd}
+.field input:focus{outline:none;border-color:var(--gold);background:#fff}
+.err{display:none;margin-top:7px;font-size:12px;color:#c0603f}
+.has-err input[type=text],.has-err input[type=tel]{border-color:#d08060;background:#fdf7f5}
+.has-err .err{display:block}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative;flex:1 1 calc(50% - 8px);min-width:0;display:block}
+.chip input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer;z-index:2}
+.chip span{
+  display:block;text-align:center;padding:12px 6px;border:1px solid var(--line);border-radius:2px;
+  font-size:13.5px;color:var(--navy-2);cursor:pointer;transition:all .3s var(--ease);background:#fdfcf9;
+}
+.chip input:checked+span{background:var(--navy);border-color:var(--navy);color:#fff}
+.chip input:focus-visible+span{outline:2px solid var(--gold);outline-offset:2px}
+.chip:hover span{border-color:var(--gold-2)}
+.agree{display:flex;gap:10px;align-items:flex-start;margin-top:26px;padding:16px 16px 14px;background:var(--ivory);border-radius:2px}
+.agree input[type=checkbox]{
+  appearance:none;-webkit-appearance:none;width:19px;height:19px;flex:none;margin-top:2px;
+  border:1px solid #b9bcc0;border-radius:2px;background:#fff;cursor:pointer;position:relative;
+  transition:background .25s var(--ease),border-color .25s var(--ease);
+}
+.agree input[type=checkbox]:checked{background:var(--navy);border-color:var(--navy)}
+.agree input[type=checkbox]:checked::after{
+  content:"";position:absolute;left:6px;top:2.5px;width:4px;height:9px;
+  border:solid #fff;border-width:0 1.5px 1.5px 0;transform:rotate(42deg);
+}
+.agree label{font-size:12.5px;line-height:1.7;color:var(--gray);cursor:pointer}
+.agree label b{color:var(--navy-2);font-weight:600}
+.agree__more{
+  display:inline-block;margin-top:4px;font-size:11.5px;color:var(--gold);text-decoration:underline;
+  text-underline-offset:3px;padding:0;
+}
+.agree .err{display:none}
+.has-err .err{display:block}
+.has-err.agree{padding-bottom:8px}
+.privacy{max-height:0;overflow:hidden;transition:max-height .45s var(--ease),margin .45s var(--ease);background:#fff;border:0 solid var(--line)}
+.privacy.open{max-height:320px;margin-top:10px;border-width:1px;padding:16px 16px 12px}
+.privacy dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:12px;line-height:1.7}
+.privacy dt{color:var(--gray);white-space:nowrap}
+.privacy dd{color:var(--text)}
+.form__submit{width:100%;margin-top:24px;height:56px;position:relative}
+.form__submit[disabled]{opacity:.72;cursor:progress}
+.spinner{
+  display:none;width:15px;height:15px;border:2px solid rgba(255,255,255,.35);
+  border-top-color:#fff;border-radius:50%;animation:spin .8s linear infinite;
+}
+.is-loading .spinner{display:inline-block}
+@keyframes spin{to{transform:rotate(360deg)}}
+.form__note{margin-top:14px;font-size:11.5px;line-height:1.7;color:var(--gray-2)}
+.hp{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+@media (max-width:980px){
+  .contact__grid{grid-template-columns:1fr;gap:40px}
+  .form{padding:30px 22px 26px}
+}
+@media (max-width:360px){
+  .chip{flex:1 1 100%}
+}
+
+/* ---------- 18. Footer ---------- */
+.footer{background:#0a1826;color:rgba(255,255,255,.6);padding:66px 0 40px;font-size:13px;line-height:1.85}
+.footer__top{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.1)}
+.footer .logo{color:#fff}
+.footer__info{margin-top:20px;font-size:12.5px;line-height:1.95;color:rgba(255,255,255,.5)}
+.footer__info strong{display:inline-block;min-width:74px;color:rgba(255,255,255,.72);font-weight:500}
+.footer__tel{text-align:right}
+.footer__tel span{display:block;font-family:var(--ff-en);font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold-2)}
+.footer__tel a{display:block;margin-top:8px;font-family:var(--ff-en);font-size:28px;letter-spacing:.06em;color:#fff}
+.footer__disclaimer{margin-top:28px;font-size:11.5px;line-height:1.95;color:rgba(255,255,255,.42)}
+.footer__copy{margin-top:20px;font-size:11px;letter-spacing:.06em;color:rgba(255,255,255,.3)}
+@media (max-width:640px){
+  .footer{padding:48px 0 108px}
+  .footer__tel{text-align:left}
+}
+
+/* ---------- 19. Floating / sticky ---------- */
+.float-side{position:fixed;right:22px;bottom:32px;z-index:70;display:flex;flex-direction:column;gap:8px;align-items:center;transition:opacity .4s var(--ease),transform .4s var(--ease)}
+.float-side.is-hidden{opacity:0;transform:translateY(20px);pointer-events:none}
+.float-side a{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
+  width:64px;height:64px;font-size:11.5px;line-height:1.25;text-align:center;font-weight:600;
+  background:var(--navy);color:#fff;border-radius:2px;box-shadow:0 8px 24px rgba(15,35,52,.22);
+  transition:background .3s var(--ease),transform .3s var(--ease);
+}
+.float-side a:hover{background:var(--gold);transform:translateY(-2px)}
+.float-side a.top{width:46px;height:46px;font-size:9px;letter-spacing:.12em;background:rgba(15,35,52,.72);opacity:0;pointer-events:none;transition:opacity .4s var(--ease)}
+.float-side a.top.show{opacity:1;pointer-events:auto}
+.float-side svg{width:17px;height:17px}
+.sticky-bar{
+  position:fixed;left:0;right:0;bottom:0;z-index:70;display:none;height:62px;
+  background:#fff;box-shadow:0 -1px 0 var(--line),0 -8px 24px rgba(15,35,52,.08);
+  padding-bottom:env(safe-area-inset-bottom);
+}
+.sticky-bar a{display:flex;align-items:center;justify-content:center;gap:8px;font-size:14px;font-weight:600;letter-spacing:.01em}
+.sticky-bar .call{flex:1;color:var(--navy);border-right:1px solid var(--line)}
+.sticky-bar .inq{flex:1.15;background:var(--navy);color:#fff}
+.sticky-bar svg{width:17px;height:17px}
+@media (max-width:860px){
+  .float-side{display:none}
+  .sticky-bar{display:flex}
+}
+
+/* ---------- 20. Modal ---------- */
+.modal{
+  position:fixed;inset:0;z-index:120;display:flex;align-items:center;justify-content:center;padding:20px;
+  background:rgba(8,18,28,.62);backdrop-filter:blur(3px);
+  opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility .35s;
+}
+.modal.open{opacity:1;visibility:visible}
+.modal__box{
+  width:min(430px,100%);background:#fff;border-radius:3px;padding:38px 32px 26px;text-align:center;
+  transform:translateY(14px) scale(.985);transition:transform .4s var(--ease);max-height:92vh;overflow:auto;
+}
+.modal.open .modal__box{transform:none}
+.modal__ico{
+  width:52px;height:52px;margin:0 auto 18px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  background:rgba(179,148,95,.14);color:var(--gold);
+}
+.modal__ico svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.modal__box.is-error .modal__ico{background:rgba(192,96,63,.12);color:#c0603f}
+#modalTitle{font-size:19px;font-weight:700;color:var(--navy);letter-spacing:-.02em}
+#modalLead{margin-top:12px;font-size:13.5px;line-height:1.8;color:var(--gray)}
+#modalLead b{color:var(--navy)}
+.modal__summary{margin-top:22px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:6px 0}
+.modal__summary>div{display:flex;justify-content:space-between;gap:14px;padding:9px 2px;font-size:13px;border-bottom:1px solid var(--line-soft)}
+.modal__summary>div:last-child{border-bottom:0}
+.modal__summary b{color:var(--gray);font-weight:500}
+.modal__summary span{color:var(--navy);font-weight:600}
+.modal__tel{margin-top:16px;font-size:12.5px;color:var(--gray)}
+.modal__tel b{color:var(--navy);font-size:14px}
+.modal__close{width:100%;margin-top:20px;height:48px}
+.modal__demo{margin-top:14px;font-size:11.5px;line-height:1.7;color:var(--gray-2)}
+
+/* ---------- 21. Lightbox ---------- */
+.lightbox{
+  position:fixed;inset:0;z-index:130;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:14px;padding:44px 18px 26px;background:rgba(6,14,22,.94);
+  opacity:0;visibility:hidden;transition:opacity .3s var(--ease),visibility .3s;
+}
+.lightbox.open{opacity:1;visibility:visible}
+.lightbox img{max-width:100%;max-height:82vh;object-fit:contain;background:#fff;border-radius:2px}
+.lightbox__cap{font-size:12.5px;color:rgba(255,255,255,.66);letter-spacing:.02em}
+.lightbox__close{
+  position:absolute;top:14px;right:16px;width:44px;height:44px;color:#fff;font-size:22px;line-height:1;
+  display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.28);border-radius:50%;
+}
+.lightbox__close:hover{background:rgba(255,255,255,.12)}
+@media (max-width:640px){
+  .lightbox{padding:56px 10px 18px}
+  .modal__box{padding:30px 22px 22px}
+}
+</style>
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body id="top">
+
+<!-- ============ Header ============ -->
+<header class="header" id="header">
+  <div class="header__in">
+    <a href="#top" class="logo" aria-label="제일풍경채 첨단3지구 A6BL">
+      <span class="logo__brand">제일풍경채</span>
+      <span class="logo__bar" aria-hidden="true"></span>
+      <span class="logo__sub"><b>첨단3지구 A6BL</b></span>
+    </a>
+
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="#overview">사업개요</a>
+      <a href="#location">입지환경</a>
+      <a href="#premium">미래가치</a>
+      <a href="#layout">단지배치</a>
+      <a href="#types">타입안내</a>
+      <a href="#contact">관심고객</a>
+    </nav>
+
+    <a href="tel:1522-7226" class="header__tel">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2Z"/></svg>
+      1522-7226
+    </a>
+
+    <button type="button" class="burger" id="burger" aria-label="메뉴 열기" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ Mobile drawer ============ -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <a href="#overview"><i>01</i>사업개요</a>
+  <a href="#location"><i>02</i>입지환경</a>
+  <a href="#premium"><i>03</i>미래가치</a>
+  <a href="#layout"><i>04</i>단지배치</a>
+  <a href="#types"><i>05</i>타입안내</a>
+  <a href="#contact"><i>06</i>관심고객</a>
+  <div class="drawer__foot">
+    <span>분양 문의</span>
+    <a href="tel:1522-7226" style="border:0;padding:0;font-size:inherit;color:inherit"><b>1522-7226</b></a>
+    <span>견본주택 · 광주 서구 마륵동 164-8 (상무역 2번출구 약 200m)</span>
+  </div>
+</div>
+
+<main>
+  <!-- ============ Hero ============ -->
+  <section class="hero">
+    <div class="hero__media">
+      <img src="./images/hero-aerial.jpg" alt="제일풍경채 첨단3지구 A6BL 단지 조감도" fetchpriority="high" />
+    </div>
+    <div class="hero__in">
+      <p class="hero__eyebrow">Gwangju Cheomdan 3 District · A6BL</p>
+      <h1>
+        <span>광주 첨단3지구, 마지막 민간분양</span>
+        첨단3지구를 완성하는<br /><em>위대한 마침표</em>
+      </h1>
+      <p class="hero__desc">
+        AI·반도체 산업의 수도로 성장하는 광주 첨단3지구.<br class="pc" />
+        제일건설이 A2BL·A5BL에 이어 세 번째로 완성하는 <b>제일풍경채 A6BL</b>, 총 638세대.
+      </p>
+      <ul class="hero__tags">
+        <li><b>638</b>세대 · 11개동</li>
+        <li>전용 <b>84·115·129</b>㎡</li>
+        <li>분양가상한제 적용</li>
+        <li>입주 <b>2029.08</b> 예정</li>
+      </ul>
+      <div class="hero__cta">
+        <a href="#contact" class="btn btn--gold">관심고객 등록</a>
+        <a href="tel:1522-7226" class="btn btn--ghost">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2Z"/></svg>
+          1522-7226
+        </a>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">Scroll<i></i></div>
+  </section>
+
+  <!-- ============ Stats ============ -->
+  <section class="stats" aria-label="단지 주요 지표">
+    <div class="stats__in">
+      <div class="stats__item">
+        <b><span data-count="638">638</span><i>세대</i></b>
+        <p>총 638세대 · 지하1층~지상20층 11개동</p>
+      </div>
+      <div class="stats__item">
+        <b><span data-count="1.6" data-decimals="1">1.6</span><i>: 1</i></b>
+        <p>주차대수 1,021대 · 세대당 1.6대</p>
+      </div>
+      <div class="stats__item stats__item--text">
+        <b>분양가상한제<i>적용</i></b>
+        <p>공공택지 리딩단지 · 합리적인 분양가</p>
+      </div>
+      <div class="stats__item">
+        <b><span class="nw">2029.08</span><i>예정</i></b>
+        <p>입주 예정 시기 · 분양가상한제 적용</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Overview ============ -->
+  <section class="sec" id="overview">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow reveal">01 · Project Overview</p>
+        <h2 class="h2 reveal" data-delay="1">사업개요</h2>
+        <p class="lead reveal" data-delay="2">
+          광주 첨단3지구 택지개발지구 A6BL. 제일풍경채 브랜드타운의 세 번째 단지로,
+          중대형 면적 중심의 총 638세대가 조성됩니다.
+        </p>
+      </div>
+
+      <div class="overview__grid">
+        <figure class="overview__figure reveal">
+          <div class="frame"><img src="./images/aerial-complex.jpg" alt="제일풍경채 첨단3지구 A6BL 조감도" loading="lazy" /></div>
+          <figcaption>※ 조감도는 소비자의 이해를 돕기 위한 CG로 실제와 차이가 있을 수 있습니다.</figcaption>
+        </figure>
+
+        <div class="overview__panels">
+          <div class="panelbox reveal" data-delay="1">
+            <h3><i>Info</i> 사업 정보</h3>
+            <dl class="deflist">
+              <div><dt>사업명</dt><dd>제일풍경채 첨단3지구 A6BL</dd></div>
+              <div><dt>대지위치</dt><dd>전남광주통합특별시 북구 일출동<br />광주 첨단3지구택지개발지구 A6BL</dd></div>
+              <div><dt>대지면적</dt><dd>44,749.00㎡ <span style="color:var(--gray-2);font-size:12px">(13,536.57평)</span></dd></div>
+              <div><dt>연면적</dt><dd>126,431.44㎡ <span style="color:var(--gray-2);font-size:12px">(38,245.51평)</span></dd></div>
+              <div><dt>건폐율 / 용적률</dt><dd>18.65% / 201.26%</dd></div>
+              <div><dt>규모</dt><dd>지하 1층 ~ 지상 20층, 11개동, <b>총 638세대</b></dd></div>
+              <div><dt>주차대수</dt><dd>1,021대 (세대당 1.6대)</dd></div>
+              <div><dt>시행 / 시공</dt><dd>첨단678피에프브이(주) / 제일건설(주)</dd></div>
+              <div><dt>견본주택</dt><dd>광주 서구 마륵동 164-8<br /><span style="color:var(--gray-2);font-size:12px">상무역 2번출구에서 약 200m</span></dd></div>
+            </dl>
+          </div>
+
+          <div class="panelbox reveal" data-delay="2">
+            <h3><i>Unit</i> 세대 구성</h3>
+            <table class="unit-table">
+              <caption class="sr-only">타입별 세대수</caption>
+              <thead>
+                <tr><th scope="col">타입</th><th scope="col">전용면적</th><th scope="col">세대수</th><th scope="col">비율</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>84㎡A</td><td>84.9900㎡<span class="pc">25.71평</span></td><td><b>282</b></td><td>44.20%</td></tr>
+                <tr><td>84㎡B</td><td>84.9900㎡<span class="pc">25.71평</span></td><td><b>35</b></td><td>5.48%</td></tr>
+                <tr><td>115㎡</td><td>115.9900㎡<span class="pc">35.09평</span></td><td><b>127</b></td><td>19.91%</td></tr>
+                <tr><td>129㎡</td><td>129.9900㎡<span class="pc">39.32평</span></td><td><b>194</b></td><td>30.41%</td></tr>
+                <tr><td>합계</td><td>—</td><td><b>638</b></td><td>100%</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Location ============ -->
+  <section class="sec sec--navy" id="location">
+    <div class="wrap">
+      <div class="sec-head sec-head--light">
+        <p class="eyebrow eyebrow--light reveal">02 · Location</p>
+        <h2 class="h2 reveal" data-delay="1">입지환경</h2>
+        <p class="lead reveal" data-delay="2">
+          대한민국 AI 성장도시의 중심. 국내 최초 데이터센터를 품은 AI 산업의 허브이자,
+          광주의 마지막 택지지구에서 마지막 민간분양으로 만나는 단지입니다.
+        </p>
+      </div>
+
+      <figure class="location__map reveal">
+        <img src="./images/location-map.jpg" alt="제일풍경채 첨단3지구 A6BL 입지 항공사진" loading="lazy" />
+        <button type="button" class="zoom-btn" data-zoom="./images/location-map.jpg" data-cap="입지환경 · 항공사진">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>
+          확대 보기
+        </button>
+      </figure>
+
+      <div class="loc-grid">
+        <article class="loc-card reveal">
+          <p class="loc-card__no">01</p>
+          <h3>AI·반도체 클러스터</h3>
+          <p>과학기술창업단지·연구산업복합단지 조성. 삼성·SK·앰코의 <b>896조원</b> 투자계획으로 서남권 반도체 특화도시의 수혜가 기대됩니다.</p>
+        </article>
+        <article class="loc-card reveal" data-delay="1">
+          <p class="loc-card__no">02</p>
+          <h3>교육 인프라</h3>
+          <p><b>AI영재고·GIST</b>와 도보권 내 유치원(예정), 산동초(예정), 산동중(예정), 고교(예정) 등 차원이 다른 교육환경.</p>
+        </article>
+        <article class="loc-card reveal" data-delay="2">
+          <p class="loc-card__no">03</p>
+          <h3>쾌적한 주거환경</h3>
+          <p>진원천·학림천·공원·영산강이 어우러진 에코 인프라. 다수의 산업단지 인접으로 <b>직주근접</b>을 실현합니다.</p>
+        </article>
+        <article class="loc-card reveal">
+          <p class="loc-card__no">04</p>
+          <h3>광역 교통망</h3>
+          <p>광주도시철도 <b>2호선 지스트역 인접(2029년 예정)</b>, 사업지까지 약 10분이면 닿는 상무지구–첨단산단 도로(2030년 예정).</p>
+        </article>
+        <article class="loc-card reveal" data-delay="1">
+          <p class="loc-card__no">05</p>
+          <h3>전남광주 통합특별시</h3>
+          <p>2026년 7월 1일 출범 예정인 <b>전남광주 통합특별시</b>. 행정·재정·지역개발 등 파격특례의 수혜가 기대됩니다.</p>
+        </article>
+        <article class="loc-card reveal" data-delay="2">
+          <p class="loc-card__no">06</p>
+          <h3>브랜드타운</h3>
+          <p>A2BL·A5BL에 이은 세 번째 <b>제일풍경채</b>. 첨단3지구 최대 스케일의 브랜드타운을 완성합니다.</p>
+        </article>
+      </div>
+
+      <div class="devplan reveal">
+        <p>
+          <b>첨단3지구 개발계획도</b>
+          AI 산업단지, 교육·연구시설, 공원·수변공간까지 첨단3지구의 전체 계획을 한눈에 확인하실 수 있습니다.
+        </p>
+        <button type="button" class="btn btn--ghost" data-zoom="./images/dev-plan.jpg" data-cap="첨단3지구 개발계획도">
+          개발계획도 크게 보기
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Premium ============ -->
+  <section class="sec sec--ivory" id="premium">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow reveal">03 · Premium</p>
+        <h2 class="h2 reveal" data-delay="1">제일풍경채 <em>8대 프리미엄</em></h2>
+        <p class="lead reveal" data-delay="2">
+          산업, 교통, 교육, 브랜드까지. 첨단3지구에서만 누릴 수 있는 여덟 가지 가치를 담았습니다.
+        </p>
+      </div>
+
+      <div class="premium__grid">
+        <article class="pcard reveal">
+          <p class="pcard__no">01</p>
+          <h3>AI·반도체 클러스터 프리미엄</h3>
+          <p>삼성·SK·앰코 등 대기업 투자로 키워지는 AI 수도의 비전. 광주 첫 반도체 클러스터의 수혜가 기대됩니다.</p>
+        </article>
+        <article class="pcard reveal" data-delay="1">
+          <p class="pcard__no">02</p>
+          <h3>지역 제한 없는 전국 단위 청약</h3>
+          <p>광주·전남 거주 여부와 관계없이 청약할 수 있는 기회. 청약 자격은 입주자모집공고를 확인하세요.</p>
+        </article>
+        <article class="pcard reveal" data-delay="2">
+          <p class="pcard__no">03</p>
+          <h3>자족형 신도시 인프라</h3>
+          <p>상권·생활·교육이 함께 계획된 대규모 기반시설. 스마트 신도시 첨단3지구의 생활권을 누립니다.</p>
+        </article>
+        <article class="pcard reveal" data-delay="3">
+          <p class="pcard__no">04</p>
+          <h3>분양가상한제 적용</h3>
+          <p>공공택지 리딩단지의 합리적인 분양가. 가격 부담은 낮추고 프리미엄은 더 크게.</p>
+        </article>
+        <article class="pcard reveal">
+          <p class="pcard__no">05</p>
+          <h3>광역으로 연결되는 교통망</h3>
+          <p>도시철도 2호선 지스트역(2029년 예정), 상무지구–첨단산단 도로(2030년 예정)로 더 빨라지는 이동.</p>
+        </article>
+        <article class="pcard reveal" data-delay="1">
+          <p class="pcard__no">06</p>
+          <h3>세대당 1.6대 주차환경</h3>
+          <p>총 1,021대의 주차대수로 주차 스트레스를 덜어낸 쾌적한 주거환경을 제공합니다.</p>
+        </article>
+        <article class="pcard reveal" data-delay="2">
+          <p class="pcard__no">07</p>
+          <h3>학세권 교육 프리미엄</h3>
+          <p>첨단3지구 내 초·중·고 인접. AI영재고·GIST와 도보권 학군이 만드는 명품 교육환경.</p>
+        </article>
+        <article class="pcard reveal" data-delay="3">
+          <p class="pcard__no">08</p>
+          <h3>북구 최대규모 브랜드타운</h3>
+          <p>광주 최대 규모 AI 특화 택지지구 내 제일건설 프리미엄 단지. 검증된 브랜드의 가치를 담았습니다.</p>
+        </article>
+      </div>
+
+      <div class="market">
+        <article class="mcard reveal">
+          <h3>판교 신도시 공공택지</h3>
+          <div class="rate"><b>192.7</b><span>% 상승</span></div>
+          <div class="mcompare" aria-hidden="true">
+            <div class="mrow"><span>분양</span><span class="mtrack"><i style="width:34%"></i></span><b>@2,608</b></div>
+            <div class="mrow"><span>매매</span><span class="mtrack"><i style="width:100%"></i></span><b>@7,636</b></div>
+          </div>
+          <p class="from">평당가 기준 [’25년 실거래]</p>
+        </article>
+        <article class="mcard reveal" data-delay="1">
+          <h3>위례 신도시 공공택지</h3>
+          <div class="rate"><b>205.0</b><span>% 상승</span></div>
+          <div class="mcompare" aria-hidden="true">
+            <div class="mrow"><span>분양</span><span class="mtrack"><i style="width:33%"></i></span><b>@1,891</b></div>
+            <div class="mrow"><span>매매</span><span class="mtrack"><i style="width:100%"></i></span><b>@5,769</b></div>
+          </div>
+          <p class="from">평당가 기준 [’26년 실거래]</p>
+        </article>
+        <article class="mcard reveal" data-delay="2">
+          <h3>운정 신도시 공공택지</h3>
+          <div class="rate"><b>47.3</b><span>% 상승</span></div>
+          <div class="mcompare" aria-hidden="true">
+            <div class="mrow"><span>분양</span><span class="mtrack"><i style="width:68%"></i></span><b>@1,454</b></div>
+            <div class="mrow"><span>매매</span><span class="mtrack"><i style="width:100%"></i></span><b>@2,141</b></div>
+          </div>
+          <p class="from">평당가 기준 [’26년 실거래]</p>
+        </article>
+      </div>
+      <p class="market__note reveal">
+        * 시세 및 상승률은 소비자의 이해를 돕기 위한 참고자료로, 조사 시점과 거래 사례에 따라 실제와 상이할 수 있습니다.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ Layout & Product ============ -->
+  <section class="sec" id="layout">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow reveal">04 · Complex &amp; Product</p>
+        <h2 class="h2 reveal" data-delay="1">단지배치 및 상품안내</h2>
+        <p class="lead reveal" data-delay="2">
+          11개 동이 어우러진 638세대. 남향 중심의 판상형 배치와 넓은 동간거리, 풍부한 조경과 커뮤니티로 완성됩니다.
+        </p>
+      </div>
+
+      <figure class="layout__figure reveal">
+        <img src="./images/site-plan.jpg" alt="제일풍경채 첨단3지구 A6BL 단지배치도" loading="lazy" />
+        <button type="button" class="zoom-btn" data-zoom="./images/site-plan.jpg" data-cap="단지배치도 (601동~611동)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>
+          확대 보기
+        </button>
+      </figure>
+
+      <div class="community">
+        <div class="cbox reveal">
+          <div class="cbox__head"><h3>주민공동시설</h3><span>B1F</span></div>
+          <ul>
+            <li>작은도서관</li><li>주민라운지</li><li>피트니스센터</li>
+            <li>GX룸</li><li>골프연습장</li><li>GDR룸</li>
+          </ul>
+        </div>
+        <div class="cbox reveal" data-delay="1">
+          <div class="cbox__head"><h3>스타디라운지 · 주민문화센터</h3><span>1F</span></div>
+          <ul>
+            <li>스타디 라운지</li><li>주민문화센터</li><li>독서실</li>
+            <li>1인 독서실</li><li>그룹스터디룸</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="product">
+        <article class="fcard reveal">
+          <h3>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1Z"/></svg>
+            설계 · 배치
+          </h3>
+          <ul>
+            <li>84㎡A·115㎡·129㎡ 4BAY / 5BAY 판상형 맞통풍 구조</li>
+            <li>84㎡B 타워형(2면개방) — 거실 2면 창호로 조망·환기 우수</li>
+            <li>기준층 천장고 2,300mm, 1층 2,500mm (우물천장 120mm)</li>
+            <li>주방 창호 설치로 환기·통풍에 유리</li>
+            <li>세대당 1.6대(총 1,021대) 주차 환경</li>
+          </ul>
+        </article>
+
+        <article class="fcard reveal" data-delay="1">
+          <h3>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 10v10"/></svg>
+            수납 · 마감
+          </h3>
+          <ul>
+            <li>현관 신발장(지정 PET) + 현관 창고·중문(확장 옵션)</li>
+            <li>주방 상부장 AL에지·지정유리 / 하부장 지정 PET</li>
+            <li>거실 아트월 포세린 타일 600×1,200 (확장 시 제공)</li>
+            <li>주방 상판 인조대리석(MMA), 확장 옵션 시 엔지니어드 스톤</li>
+            <li>드레스룸·복도 팬트리·주방 팬트리 등 풍부한 수납</li>
+          </ul>
+        </article>
+
+        <article class="fcard reveal">
+          <h3>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>
+            조명 · 가전
+          </h3>
+          <ul>
+            <li>침니형 후드 · 3구 가스 쿡탑 · 10인치 주방 액정 TV</li>
+            <li>거실 월패드 10인치 적용</li>
+            <li>[유상옵션] 3구 인덕션 · 빌트인 전기오븐 · 식기세척기</li>
+            <li>[유상옵션] 비스포크 냉장고 · 천장형 시스템 에어컨</li>
+            <li>[유상옵션] 우물천장 리니어 조명 + 실링팬 조명 스타일링</li>
+          </ul>
+        </article>
+
+        <article class="fcard reveal" data-delay="1">
+          <h3>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V9l8-5 8 5v11"/><path d="M9 20v-6h6v6"/></svg>
+            욕실 · 옵션
+          </h3>
+          <ul>
+            <li>욕실 바닥 일부 난방 · 미끄럼방지 타일(300×300)</li>
+            <li>수납형 세라믹 욕조(공용) · 접합유리 샤워부스(부부)</li>
+            <li>엔지니어드 스톤 젠다이 · 수납형 해바라기 샤워기</li>
+            <li>[유상옵션] 비데일체형 양변기 · 욕실 복합환풍기 (욕실 1·2 SET)</li>
+            <li>[유상옵션] 전동 빨래건조대 · 아일랜드장 · 시스템 수납장</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="gallery">
+        <figure class="gitem" data-zoom="./images/interior-living.jpg" data-cap="84㎡A 거실 (확장 옵션 적용 시)">
+          <img src="./images/interior-living.jpg" alt="84㎡A 거실 인테리어" loading="lazy" />
+          <span>거실 · Living</span>
+        </figure>
+        <figure class="gitem" data-zoom="./images/interior-kitchen.jpg" data-cap="84㎡A 주방 (확장 옵션 적용 시)">
+          <img src="./images/interior-kitchen.jpg" alt="84㎡A 주방·식당 인테리어" loading="lazy" />
+          <span>주방 · Kitchen</span>
+        </figure>
+        <figure class="gitem" data-zoom="./images/interior-dressroom.jpg" data-cap="드레스룸 (확장 옵션 적용 시)">
+          <img src="./images/interior-dressroom.jpg" alt="드레스룸 인테리어" loading="lazy" />
+          <span>드레스룸</span>
+        </figure>
+        <figure class="gitem" data-zoom="./images/interior-bathroom.jpg" data-cap="욕실 (확장 기본형 기준)">
+          <img src="./images/interior-bathroom.jpg" alt="욕실 인테리어" loading="lazy" />
+          <span>욕실 · Bath</span>
+        </figure>
+      </div>
+      <p class="market__note reveal">※ 인테리어 이미지는 소비자의 이해를 돕기 위한 연출 컷으로, 실제 시공과 다를 수 있습니다.</p>
+    </div>
+  </section>
+
+  <!-- ============ Types ============ -->
+  <section class="sec sec--ivory" id="types">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow reveal">05 · Unit Type</p>
+        <h2 class="h2 reveal" data-delay="1">타입안내</h2>
+        <p class="lead reveal" data-delay="2">
+          전용 84㎡A·84㎡B, 115㎡, 129㎡ — 네 가지 타입 모두 확장 기본형과 확장 옵션형으로 선택할 수 있습니다.
+        </p>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="타입 선택">
+        <button type="button" role="tab" id="tab-84a" aria-controls="panel-84a" aria-selected="true" tabindex="0">84㎡A<span>282세대 · 4BAY 판상형</span></button>
+        <button type="button" role="tab" id="tab-84b" aria-controls="panel-84b" aria-selected="false" tabindex="-1">84㎡B<span>35세대 · 타워형</span></button>
+        <button type="button" role="tab" id="tab-115" aria-controls="panel-115" aria-selected="false" tabindex="-1">115㎡<span>127세대 · 4BAY 판상형</span></button>
+        <button type="button" role="tab" id="tab-129" aria-controls="panel-129" aria-selected="false" tabindex="-1">129㎡<span>194세대 · 5BAY 판상형</span></button>
+      </div>
+
+      <!-- 84A -->
+      <div class="panel is-active" role="tabpanel" id="panel-84a" aria-labelledby="tab-84a" tabindex="0">
+        <div class="panel__media" data-zoom="./images/plan-84a.jpg" data-cap="84㎡A 평면도 (확장 기본형)">
+          <img src="./images/plan-84a.jpg" alt="84㎡A 평면도" loading="lazy" />
+          <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>확대 보기</span>
+        </div>
+        <div class="panel__body">
+          <h3>84㎡A <em>282세대 · 44.20%</em></h3>
+          <p class="ptype">4BAY 판상형 · 환기와 통풍이 우수한 맞통풍 구조</p>
+          <dl class="spec">
+            <div><dt>전용면적</dt><dd>84.9900㎡<small>25.71평</small></dd></div>
+            <div><dt>공용면적</dt><dd>26.0649㎡<small>7.88평</small></dd></div>
+            <div><dt>공급면적</dt><dd>111.0549㎡<small>33.59평</small></dd></div>
+            <div><dt>계약면적</dt><dd>160.7400㎡<small>48.62평</small></dd></div>
+          </dl>
+          <ul class="rooms">
+            <li><b>침실1</b>3.0 × 3.45</li>
+            <li><b>침실2</b>2.7 × 3.45</li>
+            <li><b>거실</b>4.5 × 3.95</li>
+            <li><b>안방</b>3.6 × 3.6</li>
+            <li><b>주방·식당</b>‘ㅡ’자 주방</li>
+            <li><b>드레스룸</b>+ 팬트리</li>
+          </ul>
+          <ul class="points">
+            <li>4BAY 판상형 구조로 환기·통풍이 우수한 맞통풍 설계</li>
+            <li>기준층 천장고 2,300mm / 1층 2,500mm, 우물천장 120mm</li>
+            <li>주방 창호 설치로 환기와 통풍에 유리</li>
+            <li>현관 창고·복도 팬트리·주방 팬트리 등 풍부한 수납(확장 옵션)</li>
+          </ul>
+          <div class="panel__cta">
+            <a href="#contact" class="btn btn--navy">84㎡A 상담 신청</a>
+            <a href="tel:1522-7226" class="btn" style="border:1px solid var(--line);color:var(--navy)">1522-7226</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 84B -->
+      <div class="panel" role="tabpanel" id="panel-84b" aria-labelledby="tab-84b" tabindex="0" hidden>
+        <div class="panel__media" data-zoom="./images/plan-84b.jpg" data-cap="84㎡B 평면도 (확장 기본형)">
+          <img src="./images/plan-84b.jpg" alt="84㎡B 평면도" loading="lazy" />
+          <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>확대 보기</span>
+        </div>
+        <div class="panel__body">
+          <h3>84㎡B <em>35세대 · 5.48%</em></h3>
+          <p class="ptype">타워형(2면개방) · 향상된 조망권과 환기·통풍</p>
+          <dl class="spec">
+            <div><dt>전용면적</dt><dd>84.9900㎡<small>25.71평</small></dd></div>
+            <div><dt>공용면적</dt><dd>26.4549㎡<small>8.00평</small></dd></div>
+            <div><dt>공급면적</dt><dd>111.4449㎡<small>33.71평</small></dd></div>
+            <div><dt>계약면적</dt><dd>161.1300㎡<small>48.74평</small></dd></div>
+          </dl>
+          <ul class="rooms">
+            <li><b>침실1</b>3.01 × 3.45</li>
+            <li><b>침실2</b>2.7 × 3.45</li>
+            <li><b>거실</b>4.5 × 4.19</li>
+            <li><b>안방</b>3.6 × 3.6</li>
+            <li><b>알파룸</b>3.0 × 1.99</li>
+            <li><b>드레스룸</b>+ 다용도실</li>
+          </ul>
+          <ul class="points">
+            <li>타워형(2면개방) 구조로 조망권과 환기·통풍이 우수</li>
+            <li>거실 2면 창호로 채광과 조망을 극대화</li>
+            <li>알파룸(3.0 × 1.99)으로 취미·서재 등 다양한 활용</li>
+            <li>희소한 35세대로 구성된 타워형 타입</li>
+          </ul>
+          <div class="panel__cta">
+            <a href="#contact" class="btn btn--navy">84㎡B 상담 신청</a>
+            <a href="tel:1522-7226" class="btn" style="border:1px solid var(--line);color:var(--navy)">1522-7226</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 115 -->
+      <div class="panel" role="tabpanel" id="panel-115" aria-labelledby="tab-115" tabindex="0" hidden>
+        <div class="panel__media" data-zoom="./images/plan-115a.jpg" data-cap="115㎡ 평면도 (확장 기본형)">
+          <img src="./images/plan-115a.jpg" alt="115㎡ 평면도" loading="lazy" />
+          <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>확대 보기</span>
+        </div>
+        <div class="panel__body">
+          <h3>115㎡ <em>127세대 · 19.91%</em></h3>
+          <p class="ptype">4BAY 판상형 · 넓어진 거실과 4개의 전면 배치</p>
+          <dl class="spec">
+            <div><dt>전용면적</dt><dd>115.9900㎡<small>35.09평</small></dd></div>
+            <div><dt>공용면적</dt><dd>34.8414㎡<small>10.54평</small></dd></div>
+            <div><dt>공급면적</dt><dd>150.8314㎡<small>45.63평</small></dd></div>
+            <div><dt>계약면적</dt><dd>218.6391㎡<small>66.14평</small></dd></div>
+          </dl>
+          <ul class="rooms">
+            <li><b>침실1</b>3.5 × 3.75</li>
+            <li><b>침실2</b>3.3 × 3.75</li>
+            <li><b>거실</b>5.1 × 3.89</li>
+            <li><b>안방</b>4.15 × 3.9</li>
+            <li><b>주방·식당</b>주방 팬트리</li>
+            <li><b>드레스룸</b>+ 다용도실</li>
+          </ul>
+          <ul class="points">
+            <li>4BAY 판상형 구조로 환기·통풍이 우수한 맞통풍 설계</li>
+            <li>5.1m 폭의 넓은 거실과 4.15m 안방</li>
+            <li>중대형 면적 중심 단지의 대표 타입</li>
+            <li>주방·복도 팬트리, 현관 창고 등 수납 강화</li>
+          </ul>
+          <div class="panel__cta">
+            <a href="#contact" class="btn btn--navy">115㎡ 상담 신청</a>
+            <a href="tel:1522-7226" class="btn" style="border:1px solid var(--line);color:var(--navy)">1522-7226</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 129 -->
+      <div class="panel" role="tabpanel" id="panel-129" aria-labelledby="tab-129" tabindex="0" hidden>
+        <div class="panel__media" data-zoom="./images/plan-129a.jpg" data-cap="129㎡ 평면도 (확장 기본형)">
+          <img src="./images/plan-129a.jpg" alt="129㎡ 평면도" loading="lazy" />
+          <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>확대 보기</span>
+        </div>
+        <div class="panel__body">
+          <h3>129㎡ <em>194세대 · 30.41%</em></h3>
+          <p class="ptype">5BAY 판상형 · 가장 넓은 5면 개방 설계</p>
+          <dl class="spec">
+            <div><dt>전용면적</dt><dd>129.9900㎡<small>39.32평</small></dd></div>
+            <div><dt>공용면적</dt><dd>38.8405㎡<small>11.75평</small></dd></div>
+            <div><dt>공급면적</dt><dd>168.8305㎡<small>51.07평</small></dd></div>
+            <div><dt>계약면적</dt><dd>244.8225㎡<small>74.06평</small></dd></div>
+          </dl>
+          <ul class="rooms">
+            <li><b>침실1</b>3.5 × 3.75</li>
+            <li><b>침실2</b>3.3 × 3.75</li>
+            <li><b>거실</b>5.4 × 3.89</li>
+            <li><b>안방</b>3.9 × 3.9</li>
+            <li><b>안방 멀티룸</b>2.1 × 3.75</li>
+            <li><b>주방 장식장</b>+ 팬트리</li>
+          </ul>
+          <ul class="points">
+            <li>5BAY 판상형 구조로 환기·통풍이 우수한 맞통풍 설계</li>
+            <li>안방 멀티룸(2.1 × 3.75)으로 안방을 한층 넓게 활용</li>
+            <li>5.4m 거실과 주방 장식장 등 중대형 특화 설계</li>
+            <li>단지 내 가장 많은 194세대로 구성</li>
+          </ul>
+          <div class="panel__cta">
+            <a href="#contact" class="btn btn--navy">129㎡ 상담 신청</a>
+            <a href="tel:1522-7226" class="btn" style="border:1px solid var(--line);color:var(--navy)">1522-7226</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Contact ============ -->
+  <section class="sec contact" id="contact">
+    <div class="wrap">
+      <div class="contact__grid">
+        <div class="contact__lead">
+          <p class="eyebrow eyebrow--light reveal">06 · Contact</p>
+          <h2 class="h2 reveal" data-delay="1">관심고객 등록</h2>
+          <p class="reveal" data-delay="2">
+            성함과 연락처를 남겨주시면 담당자가 순차적으로 안내드립니다.
+            궁금하신 사항은 대표번호로 편하게 문의하세요.
+          </p>
+
+          <a href="tel:1522-7226" class="contact__tel reveal" data-delay="3">
+            <span>Representative Number</span>
+            <b>1522-7226</b>
+            <em>대표번호 · 전화 연결</em>
+          </a>
+
+          <p class="contact__note reveal" data-delay="3">
+            견본주택 · 광주 서구 마륵동 164-8<br />
+            상무역 2번출구에서 약 200m
+          </p>
+        </div>
+
+        <form class="form reveal" data-delay="1" id="inqForm" novalidate>
+          <p class="form__title">관심고객 등록 <i>Inquiry</i></p>
+
+          <div class="field" id="f-name">
+            <label for="name">성함<span class="req">*</span></label>
+            <input type="text" id="name" name="name" placeholder="성함을 입력해 주세요" autocomplete="name" maxlength="20" />
+            <p class="err">성함을 입력해 주세요.</p>
+          </div>
+
+          <div class="field" id="f-phone">
+            <label for="phone">연락처<span class="req">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="010-0000-0000" inputmode="numeric" autocomplete="tel" maxlength="13" />
+            <p class="err">연락처를 정확히 입력해 주세요.</p>
+          </div>
+
+          <div class="field" id="f-type">
+            <span class="field__label">관심 평형<span class="req">*</span></span>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="type" value="84㎡A" /><span>84㎡A</span></label>
+              <label class="chip"><input type="radio" name="type" value="84㎡B" /><span>84㎡B</span></label>
+              <label class="chip"><input type="radio" name="type" value="115㎡" /><span>115㎡</span></label>
+              <label class="chip"><input type="radio" name="type" value="129㎡" /><span>129㎡</span></label>
+            </div>
+            <p class="err">관심 평형을 선택해 주세요.</p>
+          </div>
+
+          <div class="agree" id="f-agree">
+            <input type="checkbox" id="agree" name="agree" />
+            <label for="agree">
+              <b>[필수]</b> 상담을 위한 개인정보 수집 및 이용에 동의합니다.
+              <br />
+              <button type="button" class="agree__more" id="privacyToggle" aria-expanded="false" aria-controls="privacyBox">내용 보기</button>
+              <span class="err">개인정보 수집 및 이용에 동의해 주세요.</span>
+            </label>
+          </div>
+
+          <div class="privacy" id="privacyBox">
+            <dl>
+              <dt>수집·이용 목적</dt><dd>분양 상담 및 안내</dd>
+              <dt>수집 항목</dt><dd>성함, 연락처, 관심 평형</dd>
+              <dt>보유·이용 기간</dt><dd>상담 완료 후 6개월</dd>
+              <dt>동의 거부 권리</dt><dd>동의를 거부할 수 있으며, 이 경우 상담이 제한됩니다.</dd>
+              <dt>운영 주체</dt><dd>제일풍경채 첨단3지구 A6BL 분양영업팀</dd>
+            </dl>
+          </div>
+
+          <button type="submit" class="btn btn--navy form__submit">
+            <span class="spinner" aria-hidden="true"></span>
+            <span class="form__submit-label">관심고객 등록하기</span>
+          </button>
+          <p class="form__note">등록하신 내용은 담당자 이메일로 전달되며, 상담 목적으로만 사용됩니다.</p>
+
+          <!-- 허니팟: 봇이 채우면 전송하지 않음 -->
+          <div class="hp" aria-hidden="true">
+            <label for="hp-website">회사 홈페이지</label>
+            <input type="text" id="hp-website" name="_honey" tabindex="-1" autocomplete="off" value="" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ Footer ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div>
+        <a href="#top" class="logo" aria-label="맨 위로">
+          <span class="logo__brand">제일풍경채</span>
+          <span class="logo__bar" aria-hidden="true"></span>
+          <span class="logo__sub"><b>첨단3지구 A6BL</b></span>
+        </a>
+        <p class="footer__info">
+          <strong>사업명</strong> 제일풍경채 첨단3지구 A6BL<br />
+          <strong>대지위치</strong> 전남광주통합특별시 북구 일출동 · 광주 첨단3지구택지개발지구 A6BL<br />
+          <strong>규모</strong> 지하 1층 ~ 지상 20층, 11개동, 총 638세대<br />
+          <strong>시행</strong> 첨단678피에프브이(주)<br />
+          <strong>시공</strong> 제일건설(주)<br />
+          <strong>견본주택</strong> 광주 서구 마륵동 164-8 (상무역 2번출구에서 약 200m)
+        </p>
+      </div>
+      <div class="footer__tel">
+        <span>Representative Number</span>
+        <a href="tel:1522-7226">1522-7226</a>
+      </div>
+    </div>
+
+    <p class="footer__disclaimer">
+      본 페이지는 분양 홍보용 안내 페이지이며, 기재된 개발계획·이미지(CG)는 인허가 과정 및 시공 시 실제와 다를 수 있으므로
+      정확한 사항은 견본주택 및 입주자모집공고를 확인하시기 바랍니다.
+      본 제작물에 사용된 CG·일러스트·사진은 소비자의 이해를 돕기 위한 것으로 실제와 차이가 있을 수 있으며,
+      기재된 개발계획은 관계기관의 인·허가 상의 문제로 변경될 수 있습니다.
+      평면도·면적·마감재·옵션 품목 및 일정은 추후 확정되며, 유상옵션 품목은 별도 선택 사항입니다.
+      <br /><br />
+      <b style="color:rgba(255,255,255,.6);font-weight:500">운영 주체</b> 제일풍경채 첨단3지구 A6BL 분양영업팀 &nbsp;|&nbsp;
+      대표번호 1522-7226
+    </p>
+    <p class="footer__copy">© 2026 제일풍경채 첨단3지구 A6BL. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ============ Floating ============ -->
+<div class="float-side" id="floatSide">
+  <a href="#contact" class="inq">관심고객<br />등록</a>
+  <a href="#top" class="top" id="topBtn" aria-label="맨 위로">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+    <span>TOP</span>
+  </a>
+</div>
+
+<!-- ============ Mobile sticky bar ============ -->
+<div class="sticky-bar">
+  <a href="tel:1522-7226" class="call">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2Z"/></svg>
+    전화상담
+  </a>
+  <a href="#contact" class="inq">관심고객 등록</a>
+</div>
+
+<!-- ============ Modal ============ -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+  <div class="modal__box">
+    <div class="modal__ico" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h4L13 7.5 10.5 9a12 12 0 0 0 4.5 4.5L16.5 11 21 13.5v4A2.5 2.5 0 0 1 18.5 20C10.5 20 4 13.5 4 5.5Z"/></svg>
+    </div>
+    <h3 id="modalTitle">관심고객 등록 완료</h3>
+    <p id="modalLead">
+      관심고객 등록이 완료되었습니다.<br />
+      빠른 시일 내에 대표번호 <b>1522-7226</b>으로 안내드리겠습니다.
+    </p>
+    <div class="modal__summary" id="modalSummary">
+      <div><b>성함</b><span id="m-name">—</span></div>
+      <div><b>연락처</b><span id="m-phone">—</span></div>
+      <div><b>관심 평형</b><span id="m-type">—</span></div>
+      <div><b>접수일시</b><span id="m-time">—</span></div>
+    </div>
+    <p class="modal__tel">전화 상담 <b>1522-7226</b></p>
+    <button type="button" class="btn btn--navy modal__close" id="modalClose">확인</button>
+    <p class="modal__demo" id="modalNote">※ 등록하신 내용은 담당자 이메일로 전달됩니다.</p>
+  </div>
+</div>
+
+<!-- ============ Lightbox ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="이미지 확대 보기" aria-hidden="true">
+  <button type="button" class="lightbox__close" id="lightboxClose" aria-label="확대 보기 닫기">×</button>
+  <img id="lightboxImg" alt="" />
+  <p class="lightbox__cap" id="lightboxCap"></p>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var TEL = "1522-7226";
+
+  /* ---------- header state ---------- */
+  var header = document.getElementById("header");
+  var topBtn = document.getElementById("topBtn");
+  var floatSide = document.getElementById("floatSide");
+  var footer = document.querySelector("footer");
+
+  function onScroll() {
+    var y = window.scrollY || window.pageYOffset;
+    header.classList.toggle("is-solid", y > 40);
+    if (y < 180) {
+      document.querySelectorAll(".nav a").forEach(function (a) { a.classList.remove("is-active"); });
+    }
+    if (topBtn) topBtn.classList.toggle("show", y > 700);
+    if (floatSide && footer) {
+      var footerTop = footer.getBoundingClientRect().top;
+      floatSide.classList.toggle("is-hidden", footerTop < window.innerHeight - 30);
+    }
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll);
+  onScroll();
+
+  /* ---------- mobile drawer ---------- */
+  var burger = document.getElementById("burger");
+  var drawer = document.getElementById("drawer");
+
+  function closeMenu() {
+    document.body.classList.remove("menu-open");
+    document.body.classList.remove("lock");
+    burger.setAttribute("aria-expanded", "false");
+    burger.setAttribute("aria-label", "메뉴 열기");
+  }
+
+  burger.addEventListener("click", function () {
+    var open = document.body.classList.toggle("menu-open");
+    document.body.classList.toggle("lock", open);
+    burger.setAttribute("aria-expanded", String(open));
+    burger.setAttribute("aria-label", open ? "메뉴 닫기" : "메뉴 열기");
+  });
+  drawer.querySelectorAll("a").forEach(function (a) {
+    a.addEventListener("click", closeMenu);
+  });
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 860) closeMenu();
+  });
+
+  /* ---------- reveal ---------- */
+  var reveals = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          en.target.classList.add("in");
+          io.unobserve(en.target);
+        }
+      });
+    }, { rootMargin: "0px 0px -10% 0px", threshold: 0.08 });
+    reveals.forEach(function (el) { io.observe(el); });
+  } else {
+    reveals.forEach(function (el) { el.classList.add("in"); });
+  }
+
+  /* ---------- count up ---------- */
+  function fmt(n, dec) {
+    return n.toLocaleString("ko-KR", {
+      minimumFractionDigits: dec,
+      maximumFractionDigits: dec
+    });
+  }
+  var counters = document.querySelectorAll("[data-count]");
+  if ("IntersectionObserver" in window) {
+    var co = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        var el = en.target;
+        var target = parseFloat(el.getAttribute("data-count"));
+        var dec = parseInt(el.getAttribute("data-decimals") || "0", 10);
+        var start = null, dur = 1400;
+        function step(ts) {
+          if (!start) start = ts;
+          var p = Math.min((ts - start) / dur, 1);
+          var eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = fmt(target * eased, dec);
+          if (p < 1) requestAnimationFrame(step);
+          else el.textContent = fmt(target, dec);
+        }
+        requestAnimationFrame(step);
+        co.unobserve(el);
+      });
+    }, { threshold: 0.4 });
+    counters.forEach(function (el) { co.observe(el); });
+  } else {
+    counters.forEach(function (el) {
+      el.textContent = fmt(parseFloat(el.getAttribute("data-count")), parseInt(el.getAttribute("data-decimals") || "0", 10));
+    });
+  }
+
+  /* ---------- type tabs ---------- */
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+  var panels = Array.prototype.slice.call(document.querySelectorAll('[role="tabpanel"]'));
+
+  function selectTab(idx, focus) {
+    tabs.forEach(function (t, i) {
+      var on = i === idx;
+      t.setAttribute("aria-selected", String(on));
+      t.setAttribute("tabindex", on ? "0" : "-1");
+      panels[i].classList.toggle("is-active", on);
+      if (on) panels[i].removeAttribute("hidden");
+      else panels[i].setAttribute("hidden", "");
+    });
+    if (focus) tabs[idx].focus();
+    /* lazy 이미지가 숨김 상태로 로드되지 않았을 수 있어 다시 확인 */
+    panels[idx].querySelectorAll("img").forEach(function (img) {
+      if (!img.complete) img.loading = "eager";
+    });
+  }
+  tabs.forEach(function (t, i) {
+    t.addEventListener("click", function () { selectTab(i, false); });
+    t.addEventListener("keydown", function (e) {
+      var k = e.key, next = null;
+      if (k === "ArrowRight" || k === "ArrowDown") next = (i + 1) % tabs.length;
+      else if (k === "ArrowLeft" || k === "ArrowUp") next = (i - 1 + tabs.length) % tabs.length;
+      else if (k === "Home") next = 0;
+      else if (k === "End") next = tabs.length - 1;
+      if (next !== null) {
+        e.preventDefault();
+        selectTab(next, true);
+      }
+    });
+  });
+
+  /* ---------- lightbox ---------- */
+  var lightbox = document.getElementById("lightbox");
+  var lightboxImg = document.getElementById("lightboxImg");
+  var lightboxCap = document.getElementById("lightboxCap");
+  var lightboxClose = document.getElementById("lightboxClose");
+  var lastFocus = null;
+
+  function openLightbox(src, cap, alt) {
+    lastFocus = document.activeElement;
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || cap || "확대 이미지";
+    lightboxCap.textContent = cap || "";
+    lightbox.classList.add("open");
+    lightbox.setAttribute("aria-hidden", "false");
+    document.body.classList.add("lock");
+    lightboxClose.focus();
+  }
+  function closeLightbox() {
+    if (!lightbox.classList.contains("open")) return;
+    lightbox.classList.remove("open");
+    lightbox.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("lock");
+    lightboxImg.removeAttribute("src");
+    if (lastFocus) lastFocus.focus();
+  }
+  lightboxClose.addEventListener("click", closeLightbox);
+  lightbox.addEventListener("click", function (e) {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.querySelectorAll("[data-zoom]").forEach(function (el) {
+    el.addEventListener("click", function () {
+      openLightbox(el.getAttribute("data-zoom"), el.getAttribute("data-cap"),
+        (el.querySelector("img") || {}).alt);
+    });
+  });
+
+  /* ---------- privacy toggle ---------- */
+  var pToggle = document.getElementById("privacyToggle");
+  var pBox = document.getElementById("privacyBox");
+  pToggle.addEventListener("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    var open = pBox.classList.toggle("open");
+    pToggle.setAttribute("aria-expanded", String(open));
+    pToggle.textContent = open ? "내용 접기" : "내용 보기";
+  });
+
+  /* ---------- phone formatting ---------- */
+  var phone = document.getElementById("phone");
+  phone.addEventListener("input", function () {
+    var d = this.value.replace(/[^0-9]/g, "").slice(0, 11);
+    var out = d;
+    if (d.length > 3 && d.length <= 7) {
+      out = d.slice(0, 3) + "-" + d.slice(3);
+    } else if (d.length > 7) {
+      if (d.length === 10) {
+        out = d.slice(0, 3) + "-" + d.slice(3, 6) + "-" + d.slice(6);
+      } else {
+        out = d.slice(0, 3) + "-" + d.slice(3, 7) + "-" + d.slice(7);
+      }
+    }
+    this.value = out;
+  });
+
+  /* ---------- form ---------- */
+  var form = document.getElementById("inqForm");
+  var fName = document.getElementById("f-name");
+  var fPhone = document.getElementById("f-phone");
+  var fType = document.getElementById("f-type");
+  var fAgree = document.getElementById("f-agree");
+  var nameEl = document.getElementById("name");
+  var agreeEl = document.getElementById("agree");
+
+  nameEl.addEventListener("input", function () { fName.classList.remove("has-err"); });
+  phone.addEventListener("input", function () { fPhone.classList.remove("has-err"); });
+  form.querySelectorAll('input[name="type"]').forEach(function (r) {
+    r.addEventListener("change", function () { fType.classList.remove("has-err"); });
+  });
+  agreeEl.addEventListener("change", function () { fAgree.classList.remove("has-err"); });
+
+  var modal = document.getElementById("modal");
+  var modalBox = modal.querySelector(".modal__box");
+  var modalTitle = document.getElementById("modalTitle");
+  var modalLead = document.getElementById("modalLead");
+  var modalSummary = document.getElementById("modalSummary");
+  var modalNote = document.getElementById("modalNote");
+  var modalFocus = null;
+
+  function openModal(opts) {
+    var data = opts.data || {};
+    modalBox.classList.toggle("is-error", opts.variant === "error");
+    modalTitle.textContent = opts.title;
+    modalLead.innerHTML = opts.lead;
+    modalNote.textContent = opts.note || "";
+    modalSummary.style.display = opts.summary === false ? "none" : "";
+    document.getElementById("m-name").textContent = data.name || "—";
+    document.getElementById("m-phone").textContent = data.phone || "—";
+    document.getElementById("m-type").textContent = data.type || "—";
+    document.getElementById("m-time").textContent = data.time || "—";
+    modalFocus = document.activeElement;
+    modal.classList.add("open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("lock");
+    document.getElementById("modalClose").focus();
+  }
+
+  function closeModal() {
+    if (!modal.classList.contains("open")) return;
+    modal.classList.remove("open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("lock");
+    if (modalFocus) modalFocus.focus();
+  }
+
+  document.getElementById("modalClose").addEventListener("click", closeModal);
+  modal.addEventListener("click", function (e) {
+    if (e.target === modal) closeModal();
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key !== "Escape") return;
+    closeLightbox();
+    closeModal();
+    closeMenu();
+  });
+
+  /* ---------- submit → Formsubmit.co ---------- */
+  var ENDPOINT = "https://formsubmit.co/ajax/hyelsunga@naver.com";
+  var submitBtn = form.querySelector(".form__submit");
+  var submitLabel = submitBtn.querySelector(".form__submit-label");
+  var honeyEl = document.getElementById("hp-website");
+  var SUBMIT_LABEL = submitLabel.textContent;
+  var sending = false;
+
+  function nowKST() {
+    var d = new Date();
+    try {
+      var p = {};
+      new Intl.DateTimeFormat("en-GB", {
+        timeZone: "Asia/Seoul", year: "numeric", month: "2-digit", day: "2-digit",
+        hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false
+      }).formatToParts(d).forEach(function (part) { p[part.type] = part.value; });
+      return p.year + "-" + p.month + "-" + p.day + " " +
+             (p.hour === "24" ? "00" : p.hour) + ":" + p.minute + ":" + p.second + " (KST)";
+    } catch (err) {
+      return d.toLocaleString("ko-KR", { timeZone: "Asia/Seoul" }) + " (KST)";
+    }
+  }
+
+  function setBusy(on) {
+    sending = on;
+    submitBtn.disabled = on;
+    submitBtn.classList.toggle("is-loading", on);
+    submitBtn.setAttribute("aria-busy", on ? "true" : "false");
+    submitLabel.textContent = on ? "전송 중…" : SUBMIT_LABEL;
+  }
+
+  function clearErrors() {
+    [fName, fPhone, fType, fAgree].forEach(function (f) { f.classList.remove("has-err"); });
+  }
+
+  function showSent(entered) {
+    form.reset();
+    clearErrors();
+    openModal({
+      variant: "success",
+      title: "관심고객 등록 완료",
+      lead: "관심고객 등록이 완료되었습니다.<br />빠른 시일 내에 대표번호 <b>" + TEL + "</b>으로 안내드리겠습니다.",
+      note: "※ 등록하신 내용은 담당자 이메일로 전달되었습니다.",
+      data: entered
+    });
+  }
+
+  function showError(kind, entered) {
+    var box = {
+      file: {
+        title: "등록을 완료하지 못했습니다",
+        lead: "지금은 파일로 열어 본 미리보기 상태라<br />이메일 접수가 동작하지 않습니다.<br />웹 주소(HTTP/HTTPS)로 게시한 뒤 이용해 주세요.",
+        note: "급하시면 대표번호 " + TEL + "으로 연락 주세요."
+      },
+      timeout: {
+        title: "접수 확인이 지연되고 있습니다",
+        lead: "응답이 늦어져 등록 완료를 확인하지 못했습니다.<br />잠시 후 다시 시도해 주세요.",
+        note: "다시 시도해도 안 되면 대표번호 " + TEL + "으로 연락 주세요."
+      },
+      network: {
+        title: "등록을 완료하지 못했습니다",
+        lead: "전송 중 문제가 발생해 접수가 이루어지지 않았습니다.<br />잠시 후 다시 시도해 주세요.",
+        note: "계속 안 되면 대표번호 " + TEL + "으로 연락 주세요."
+      }
+    }[kind];
+
+    openModal({
+      variant: "error",
+      title: box.title,
+      lead: box.lead,
+      note: box.note,
+      data: entered,
+      summary: false
+    });
+  }
+
+  function sendInquiry(payload, entered) {
+    setBusy(true);
+    var ctrl = ("AbortController" in window) ? new AbortController() : null;
+    var timer = ctrl ? setTimeout(function () { ctrl.abort(); }, 15000) : null;
+
+    fetch(ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify(payload),
+      signal: ctrl ? ctrl.signal : undefined
+    }).then(function (res) {
+      return res.json().catch(function () { return {}; }).then(function (data) {
+        if (!res.ok || String(data && data.success) === "false") {
+          throw new Error("formsubmit_" + res.status);
+        }
+        return data;
+      });
+    }).then(function () {
+      if (timer) clearTimeout(timer);
+      setBusy(false);
+      showSent(entered);
+    }).catch(function (err) {
+      if (timer) clearTimeout(timer);
+      setBusy(false);
+      showError(err && err.name === "AbortError" ? "timeout" : "network", entered);
+    });
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (sending) return;
+
+    var ok = true;
+    var name = nameEl.value.trim();
+    var digits = phone.value.replace(/[^0-9]/g, "");
+    var type = form.querySelector('input[name="type"]:checked');
+
+    if (name.length < 2) { fName.classList.add("has-err"); ok = false; }
+    if (!(digits.length === 10 || digits.length === 11) || !/^0/.test(digits)) {
+      fPhone.classList.add("has-err"); ok = false;
+    }
+    if (!type) { fType.classList.add("has-err"); ok = false; }
+    if (!agreeEl.checked) { fAgree.classList.add("has-err"); ok = false; }
+
+    if (!ok) {
+      var first = form.querySelector(".has-err");
+      if (first) {
+        var focusable = first.querySelector("input");
+        if (focusable) focusable.focus({ preventScroll: true });
+        first.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+      return;
+    }
+
+    if (honeyEl && honeyEl.value !== "") {
+      form.reset();
+      clearErrors();
+      return;
+    }
+
+    var time = nowKST();
+    var entered = { name: name, phone: phone.value, type: type.value, time: time };
+
+    if (window.location.protocol === "file:") {
+      showError("file", entered);
+      return;
+    }
+
+    sendInquiry({
+      "성함": name,
+      "연락처": phone.value,
+      "관심평형": type.value,
+      "접수일시": time,
+      "_subject": "[제일풍경채 첨단3지구 A6BL] 신규 관심고객 등록",
+      "_template": "table",
+      "_captcha": "false"
+    }, entered);
+  });
+
+  /* ---------- nav active ---------- */
+  var sections = ["overview", "location", "premium", "layout", "types", "contact"]
+    .map(function (id) { return document.getElementById(id); })
+    .filter(Boolean);
+  if ("IntersectionObserver" in window) {
+    var navLinks = document.querySelectorAll(".nav a");
+    var so = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        navLinks.forEach(function (a) {
+          a.classList.toggle("is-active", a.getAttribute("href") === "#" + en.target.id);
+        });
+      });
+    }, { rootMargin: "-45% 0px -50% 0px" });
+    sections.forEach(function (s) { so.observe(s); });
+  }
+})();
+</script>
+</body>
+</html>
