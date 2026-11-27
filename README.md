@@ -104,7 +104,7 @@ python3 -m http.server 8080
 - 엔드포인트: `https://formsubmit.co/ajax/hyelsunga@naver.com` (AJAX, JSON)
 - 전송 항목: `성함`, `연락처`, `희망평형`, `방문일`, `방문시간`, `접수일시`, `_subject`, `_template=table`, `_captcha=false`
 - `_subject`: `[제일풍경채 첨단3지구 A6BL] 신규 방문예약`
-- 희망평형: `84㎡A`, `84㎡B`, `115㎡`, `129㎡`
+- 희망평형: `84㎡ A·B`, `115㎡`, `129㎡` — 방문예약 폼에서 84㎡A·84㎡B를 하나로 통합(3개 버튼 3등분). 타입안내 탭은 84㎡A·84㎡B 개별 유지
 - 방문일: `<input type="date">`, `min`을 오늘(KST)로 동적 설정 (과거 날짜 선택·전송 불가)
 - 방문시간: `<select>` — `10:00`~`18:00` 정시 9개 + `시간 추후 협의` (모델하우스 운영시간 10:00~18:00)
 - 공통 동작: 연락처 자동 하이픈, 필수 6개 항목 검증, 허니팟(`_honey`), 전송 중 중복 제출 차단,
@@ -119,12 +119,12 @@ LD_LIBRARY_PATH=/workspace/.local/syslibs python3 cheomdan3-jeil/tests/site-chec
 LD_LIBRARY_PATH=/workspace/.local/syslibs python3 cheomdan3-jeil/tests/visit-form-check.py
 ```
 
-결과: site-check **64개**, visit-form-check **49개** 검사 전부 통과 (`tests/screenshots/`, `browser/`에 화면 캡처 저장)
+결과: site-check **67개**, visit-form-check **56개** 검사 전부 통과 (`tests/screenshots/`, `browser/`에 화면 캡처 저장)
 
 - PC(1440×900) / 모바일(390×844) 모두 가로 스크롤 없음, 화면에 노출된 이미지 전부 로드(`naturalWidth > 0`)
 - 타입 탭 4종 전환·키보드(←/→) 전환·평면도 교체 로드
 - 평면도·배치도·입지도·개발계획도 확대 보기(라이트박스) 열기/닫기(ESC)
-- 폼: 빈 제출 4개 오류 표시·요청 없음 / 잘못된 연락처 / 동의 미체크 / 전송 중 비활성·중복 차단 /
+- 폼: 희망 평형 3개(84㎡ A·B·115㎡·129㎡) 3등분 한 줄 배치 / 빈 제출 6개 오류 표시·요청 없음 / 잘못된 연락처 / 동의 미체크 / 전송 중 비활성·중복 차단 /
   요청 페이로드·`_subject`·`접수일시(KST)` 검증 / 성공 모달 / HTTP 500 오류 모달 / `file://` 안내
 - 콘솔 오류·페이지 런타임 오류 없음
 

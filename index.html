@@ -521,8 +521,8 @@ body.menu-open .drawer{opacity:1;visibility:visible}
   .field-row{grid-template-columns:1fr;gap:0}
   .field-row .field{margin-top:16px}
 }
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chip{position:relative;flex:1 1 calc(50% - 8px);min-width:0;display:block}
+.chips{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.chip{position:relative;min-width:0;display:block}
 .chip input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer;z-index:2}
 .chip span{
   display:block;text-align:center;padding:12px 6px;border:1px solid var(--line);border-radius:2px;
@@ -571,7 +571,8 @@ body.menu-open .drawer{opacity:1;visibility:visible}
   .form{padding:30px 22px 26px}
 }
 @media (max-width:360px){
-  .chip{flex:1 1 100%}
+  .chips{gap:6px}
+  .chip span{padding:12px 3px;font-size:12px}
 }
 
 /* ---------- 18. Footer ---------- */
@@ -1301,8 +1302,7 @@ body.menu-open .drawer{opacity:1;visibility:visible}
           <div class="field" id="f-type">
             <span class="field__label">희망 평형<span class="req">*</span></span>
             <div class="chips">
-              <label class="chip"><input type="radio" name="type" value="84㎡A" /><span>84㎡A</span></label>
-              <label class="chip"><input type="radio" name="type" value="84㎡B" /><span>84㎡B</span></label>
+              <label class="chip"><input type="radio" name="type" value="84㎡ A·B" /><span>84㎡ A·B</span></label>
               <label class="chip"><input type="radio" name="type" value="115㎡" /><span>115㎡</span></label>
               <label class="chip"><input type="radio" name="type" value="129㎡" /><span>129㎡</span></label>
             </div>
